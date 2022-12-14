@@ -29,7 +29,7 @@ with col2:
               use_container_width=True)
               
 st.header('投手成績')
-st.write(BrothersPitching)
+st.write(df)
 st.header('數據分析')
 plt.style.use("ggplot")
 plt.plot(df.年份,df.勝率PCT,'.-' ,color='yellow')
