@@ -23,7 +23,7 @@ with col2:
   donut_theta = st.selectbox('Select data', ('14-15', '15-16','16-17','17-18','18-19','19-20','20-21','21-22'))
   plost.donut_chart(
               data=dount_chart_df ,
-              theta=dount_theta,
+              theta=dot_theta,
               color='項目',
               legend='bottom',
               use_container_width=True)
