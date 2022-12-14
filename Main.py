@@ -17,7 +17,7 @@ df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
 dount_chart_df = pd.read_excel("teamsdata(dountchart).xlsx",sheet_name=option)
 st.dataframe(df)
 st.markdown('### 2021-22年全年度戰績Donut chart')
-  plost.donut_chart(
+plost.donut_chart(
               data=dount_chart_df ,
               theta='14-15戰績',
               color='項目',
