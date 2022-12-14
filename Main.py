@@ -31,7 +31,7 @@ with col2:
 c=pd.read_excel("nbateamsdata.xlsx",sheet_name=option,usecols = 'E')
 st.dataframe(c)
 plt.style.use("ggplot")
-plt.plot(df.年份,df.[E],'.-' ,color='yellow')
+plt.plot(df.年份,c,'.-' ,color='yellow')
 plt.xlabel('Season') # 設定x軸標題
 plt.xticks([2021,2020,2019,2018,2017,2016,2015,2014])
 plt.xticks(df.年度) # 設定x軸
