@@ -12,13 +12,15 @@ teams_list = {'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphi
               'Portland Trail Blazers','Utah Jazz'}
 st.sidebar.header('請選擇球隊及想查看數據')
 option = st.sidebar.selectbox('選擇球隊？',teams_list)
-
-st.markdown('### 球隊戰績')
-df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
-dount_chart_df = pd.read_excel("teamsdata(dountchart).xlsx",sheet_name=option)
-st.dataframe(df)
-st.markdown('### 2021-22年全年度戰績Donut chart')
-plost.donut_chart(
+col1,col2=st.columns((6,4))
+with col1:
+  st.markdown('### 球隊戰績')
+  df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
+  st.dataframe(df)
+with col2: 
+  dount_chart_df = pd.read_excel("teamsdata(dountchart).xlsx",sheet_name=option)
+  st.markdown('### 2021-22年全年度戰績Donut chart')
+  plost.donut_chart(
               data=dount_chart_df ,
               theta='14-15戰績',
               color='項目',
