@@ -20,9 +20,10 @@ with col1:
 with col2: 
   dount_chart_df = pd.read_excel("teamsdata(dountchart).xlsx",sheet_name=option)
   st.markdown('### 2021-22年全年度戰績Donut chart')
+  donut_theta = st.sidebar.selectbox('Select data', ('14-15戰績', '15-16戰績'))
   plost.donut_chart(
               data=dount_chart_df ,
-              theta='14-15戰績',
+              theta='dount_theta',
               color='項目',
               legend='bottom',
               use_container_width=True)
