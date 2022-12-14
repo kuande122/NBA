@@ -34,7 +34,7 @@ plt.style.use("ggplot")
 plt.plot(df.年份,c,'.-' ,color='yellow')
 plt.xlabel('Season') # 設定x軸標題
 plt.xticks([2021,2020,2019,2018,2017,2016,2015,2014])
-plt.xticks(df.年度) # 設定x軸
+plt.xticks(df.年份) # 設定x軸
 plt.title('CTBC Brothers Pitching ERA VS Other Teams ') # 設定圖表標題
 plt.legend(labels=["BrothersPitching", "UnilionsPitching","DragonsPitching","GuardiansPitching","RakutenPitching"], loc = 'best')
 st.pyplot(plt) 
