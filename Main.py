@@ -28,9 +28,6 @@ with col2:
               legend='bottom',
               use_container_width=True)
               
-st.header('投手成績')
-st.write(df)
-st.header('數據分析')
 plt.style.use("ggplot")
 plt.plot(df.年份,df.勝率,'.-' ,color='yellow')
 plt.xlabel('Season') # 設定x軸標題
