@@ -27,7 +27,9 @@ with col2:
               color='項目',
               legend='bottom',
               use_container_width=True)
-              
+
+c=pd.read_excel('nbateamsdata.xlsx",sheet_name=option,usecols = 'E')
+st.dataframe(c)
 plt.style.use("ggplot")
 plt.plot(df.年份,df.[E],'.-' ,color='yellow')
 plt.xlabel('Season') # 設定x軸標題
