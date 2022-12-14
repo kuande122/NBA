@@ -28,8 +28,8 @@ with col2:
               legend='bottom',
               use_container_width=True)
 st.markdown('### 2021-22球員戰績')
-player_data=pd.read_excel("21-22playersdata",sheet_name=option)
-st.dataframe(player_data)
+players_data=pd.read_excel("21-22playersdata.xlsx",sheet_name=option)
+st.dataframe(players_data)
 
 
 
