@@ -11,6 +11,6 @@ teams_list = {'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphi
 st.sidebar.header('請選擇球隊及想查看數據')
 option = st.sidebar.selectbox('選擇球隊？',teams_list)
 
-st.markdown('## 球隊戰績')
+st.markdown('### 球隊戰績')
 df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
 st.dataframe(df)
