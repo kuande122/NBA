@@ -1,4 +1,6 @@
 import streamlit as st  
+import xlrd 
+import openpyxl
 st.set_page_config(layout="wide")
 st.title('NBA資訊面板系統')
 teams_list = {'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphia 76ers','Toronto Raptors','Chicago Bulls', 'Cleveland Cavaliers', 'Detroit Pistons', 'Indiana Pacers','Milwaukee Bucks',
