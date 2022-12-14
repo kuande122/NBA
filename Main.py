@@ -3,6 +3,7 @@ import xlrd
 import openpyxl
 import pandas as pd
 import plost
+import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 st.title('NBA資訊面板系統')
 teams_list = {'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphia 76ers','Toronto Raptors','Chicago Bulls', 'Cleveland Cavaliers', 'Detroit Pistons', 'Indiana Pacers','Milwaukee Bucks',
