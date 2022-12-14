@@ -19,8 +19,8 @@ with col1:
   st.dataframe(df)
 with col2: 
   dount_chart_df = pd.read_excel("nbateamsdata(dount_chart).xlsx",sheet_name=option)
-  st.markdown('### 2021-22年全年度戰績Donut chart')
-  donut_theta = st.selectbox('Select data', ('14-15', '15-16','16-17','17-18','18-19','19-20','20-21','21-22'))
+  st.markdown('### 年度戰績Donut chart')
+  donut_theta = st.selectbox('選擇年度', ('14-15年', '15-16年','16-17年','17-18年','18-19年','19-20年','20-21年','21-22年'))
   plost.donut_chart(
               data=dount_chart_df ,
               theta=donut_theta,
