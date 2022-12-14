@@ -28,7 +28,7 @@ with col2:
               legend='bottom',
               use_container_width=True)
 
-c=pd.read_excel('nbateamsdata.xlsx",sheet_name=option,usecols = 'E')
+c=pd.read_excel("nbateamsdata.xlsx",sheet_name=option,usecols = 'E')
 st.dataframe(c)
 plt.style.use("ggplot")
 plt.plot(df.年份,df.[E],'.-' ,color='yellow')
