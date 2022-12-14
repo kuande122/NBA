@@ -2,3 +2,5 @@ xlrd
 openpyxl
 pandas
 plost
+plotly
+matplotlib
