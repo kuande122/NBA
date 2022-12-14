@@ -15,8 +15,8 @@ option = st.sidebar.selectbox('選擇球隊？',teams_list)
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
-  df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
-  st.dataframe(df)
+  teams_data = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
+  st.dataframe(teams_data)
 with col2: 
   dount_chart_df = pd.read_excel("nbateamsdata(dount_chart).xlsx",sheet_name=option)
   st.markdown('### 年度戰績Donut chart')
@@ -27,5 +27,9 @@ with col2:
               color='項目',
               legend='bottom',
               use_container_width=True)
+st.markdown('### 2021-22球員戰績')
+player_data=pd.read_excel("21-22playersdata",sheet_name=option)
+st.dataframe(player_data)
+
 
 
