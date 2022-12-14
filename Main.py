@@ -23,3 +23,6 @@ plost.donut_chart(
               color='項目',
               legend='bottom',
               use_container_width=True)
+
+
+
