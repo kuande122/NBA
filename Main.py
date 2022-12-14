@@ -12,5 +12,5 @@ st.sidebar.header('請選擇球隊及想查看數據')
 option = st.sidebar.selectbox('選擇球隊？',teams_list)
 
 st.markdown('### 2022年全年度戰績Donut chart')
-df = pd.read_excel("teamsdata.xlsx",sheet_name=option)
+df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
 st.dataframe(df)
