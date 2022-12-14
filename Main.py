@@ -2,6 +2,7 @@ import streamlit as st
 import xlrd 
 import openpyxl
 import pandas as pd
+import plost
 st.set_page_config(layout="wide")
 st.title('NBA資訊面板系統')
 teams_list = {'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphia 76ers','Toronto Raptors','Chicago Bulls', 'Cleveland Cavaliers', 'Detroit Pistons', 'Indiana Pacers','Milwaukee Bucks',
@@ -14,3 +15,10 @@ option = st.sidebar.selectbox('選擇球隊？',teams_list)
 st.markdown('### 球隊戰績')
 df = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
 st.dataframe(df)
+st.markdown('### 2021-22年全年度戰績Donut chart')
+  plost.donut_chart(
+              data=dount_chart_df ,
+              theta='14-15戰績',
+              color='項目',
+              legend='bottom',
+              use_container_width=True)
