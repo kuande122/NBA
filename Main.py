@@ -15,7 +15,7 @@ option = st.sidebar.selectbox('選擇球隊？',teams_list)
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
-  teams_data = pd.read_excel("nbateamsdata.xlsx",index_col="Film",sheet_name=option)
+  teams_data = pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
   st.dataframe(teams_data)
 with col2: 
   dount_chart_df = pd.read_excel("nbateamsdata(dount_chart).xlsx",sheet_name=option)
