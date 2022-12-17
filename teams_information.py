@@ -479,4 +479,3 @@ def teams_information(option):
     col1, col2= st.columns(2)
     col1.metric("總冠軍🏆", "5  次")
     col2.metric("區冠軍🏆", "6  次")
-st.write(teams)
