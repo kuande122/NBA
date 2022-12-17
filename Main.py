@@ -31,6 +31,7 @@ teams_list=area()
 option = st.sidebar.selectbox('選擇球隊？',teams_list)
 
 teams_information.teams_information(option)
+teams_map.teams_map(option)
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
