@@ -5,6 +5,7 @@ import pandas as pd
 import plost
 import matplotlib.pyplot as plt
 import teams_information
+import teams_map
 
 st.set_page_config(layout="wide")
 st.title('NBA資訊面板系統')
