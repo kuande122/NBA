@@ -35,7 +35,7 @@ teams_information.teams_information(option)
 teams_map.teams_map(option)
 
 
-team_data=pd.read_excel("teamsdata(dount_chart).xlsx",sheet_name=option)
+team_data=pd.read_excel("teamsdata.xlsx",sheet_name=option)
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
