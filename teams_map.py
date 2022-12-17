@@ -1,7 +1,7 @@
 import streamlit as st  
 from PIL import Image  
 def teams_map(option):
-  if option=="Boston Celtics"
+  if option=="Boston Celtics":
     st.header('主場:TD Garden')
     col1, col2 = st.columns(2)
     with col1: 
@@ -20,7 +20,7 @@ def teams_map(option):
         st.image(image1)
         
         
-  if option=="Brooklyn Nets"
+  if option=="Brooklyn Nets":
     st.header('主場:Barclays Center')
     col1, col2 = st.columns(2)
     with col1: 
@@ -39,7 +39,7 @@ def teams_map(option):
         st.image(image1)
     
     
-  if option=="New York Knicks"
+  if option=="New York Knicks":
     st.header('主場:MSG The Garden')
     col1, col2 = st.columns(2)
     with col1: 
@@ -58,7 +58,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Philadelphia 76ers"
+  if option=="Philadelphia 76ers":
     st.header('主場:Wells Fargo Center')
     col1, col2 = st.columns(2)
     with col1:   
@@ -78,7 +78,7 @@ def teams_map(option):
         
         
         
-  if option=="Toronto Raptors"
+  if option=="Toronto Raptors":
     st.header('主場:Scotiabank Arena')
     col1, col2 = st.columns(2)
     with col1:  
@@ -97,7 +97,7 @@ def teams_map(option):
         st.image(image1)
         
         
-  if option=="Chicago Bulls"
+  if option=="Chicago Bulls":
     st.header('主場:United Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -116,7 +116,7 @@ def teams_map(option):
         st.image(image1)   
         
         
-  if option=="Cleveland Cavaliers"
+  if option=="Cleveland Cavaliers":
     st.header('主場:Quicken Loans Arena')
     col1, col2 = st.columns(2)
     with col1:  
@@ -135,7 +135,7 @@ def teams_map(option):
         st.image(image1)
     
     
-  if option=="Detroit Pistons"
+  if option=="Detroit Pistons":
     st.header('主場:Little Caesars Arena')
     col1, col2 = st.columns(2)
     with col1:  
@@ -154,7 +154,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Indiana Pacers"
+  if option=="Indiana Pacers":
     st.header('主場:Gainbridge Fieldhouse')
     col1, col2 = st.columns(2)
     with col1:  
@@ -173,7 +173,7 @@ def teams_map(option):
         image1 =Image.open('Home/GainbridgeFieldhouse1.jpg')
         st.image(image1)
    
-  if option=="Milwaukee Bucks"
+  if option=="Milwaukee Bucks":
     st.header('主場:Fiserv Forum')
     col1, col2 = st.columns(2)
     with col1:
@@ -193,7 +193,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Atlanta Hawks"
+  if option=="Atlanta Hawks":
     st.header('主場:State Farm Arena')
     col1, col2 = st.columns(2)
     with col1:
@@ -213,7 +213,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Charlotte Hornets"
+  if option=="Charlotte Hornets":
     st.header('主場:Spectrum Center')
     col1, col2 = st.columns(2)
     with col1: 
@@ -233,7 +233,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Miami Heat"
+  if option=="Miami Heat":
     st.header('主場:FTX Arena')
     col1, col2 = st.columns(2)
     with col1:  
@@ -251,7 +251,7 @@ def teams_map(option):
         st.image(image)
         image1 =Image.open('Home/FTX Arena1.jpg')
         st.image(image1)
-  if option=="Orlando Magic"
+  if option=="Orlando Magic":
     st.header('主場:Amway Center')
     col1, col2 = st.columns(2)
     with col1:  
@@ -271,7 +271,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Washington Wizards"
+  if option=="Washington Wizards":
     st.header('主場:Capital One Arena')
     col1, col2 = st.columns(2)
     with col1:        
@@ -289,7 +289,7 @@ def teams_map(option):
         image1 =Image.open('Home/Capital One Arena1.jpeg')
         st.image(image1)
    
-  if option=="Denver Nuggets"
+  if option=="Denver Nuggets":
     st.header('主場:Ball Arena')
     col1, col2 = st.columns(2)
     with col1:
@@ -308,7 +308,7 @@ def teams_map(option):
         st.image(image1)
    
   
-  if option=="Minnesota Timberwolves"
+  if option=="Minnesota Timberwolves":
     st.header('主場:Target Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -326,7 +326,7 @@ def teams_map(option):
         image1 =Image.open('Home/Target Center1.jpeg')
         st.image(image1)
    
-  if option=="Oklahoma City Thunder"
+  if option=="Oklahoma City Thunder":
     st.header('主場:Chesapeake Energy Arena')
     col1, col2 = st.columns(2)
     with col1: 
@@ -344,7 +344,7 @@ def teams_map(option):
         image1 =Image.open('Home/Chesapeake Energy Arena1.jpeg')
         st.image(image1)
     
-  if option=="Portland Trail Blazers"
+  if option=="Portland Trail Blazers":
     st.header('主場:Moda Center')
     col1, col2 = st.columns(2)
     with col1:   
@@ -362,7 +362,7 @@ def teams_map(option):
         image1 =Image.open('Home/Moda Center1.jpeg')
         st.image(image1)
  
-  if option=="Utah Jazz"
+  if option=="Utah Jazz":
     st.header('主場:Vivint Arena')
     col1,col2 = st.columns(2)
     with col1:
@@ -380,7 +380,7 @@ def teams_map(option):
         st.image(image)
         image1 =Image.open('Home/Vivint Arena1.jpeg')
         st.image(image1)
-  if option=="Golden State Warriors"
+  if option=="Golden State Warriors":
     st.header('主場:Chase Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -399,7 +399,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Los Angeles Clippers"
+  if option=="Los Angeles Clippers":
     st.header('主場:Staples Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -418,7 +418,7 @@ def teams_map(option):
         image1 = Image.open('Home/Staples_Center_Tickets.jpg')
         st.image(image1)
    
-  if option=="Los Angeles Lakers"
+  if option=="Los Angeles Lakers":
     st.header('主場:Staples Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -438,7 +438,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Phoenix Suns"
+  if option=="Phoenix Suns":
     st.header('主場:Footprint Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -458,7 +458,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Sacramento Kings"
+  if option=="Sacramento Kings":
     st.header('主場:Golden1 Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -477,7 +477,7 @@ def teams_map(option):
         image1 = Image.open('Home/Golden1_Center_Tickets.jpg')
         st.image(image1)
    
-  if option=="Dallas Mavericks"
+  if option=="Dallas Mavericks":
     st.header('主場:American Airlines Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -497,7 +497,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Houston Rockets"
+  if option=="Houston Rockets":
     st.header('主場:Toyota Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -516,7 +516,7 @@ def teams_map(option):
         image1 = Image.open('Home/Toyota_Center_Tickets.jpg')
         st.image(image1)
     
-  if option=="Memphis Grizzlies"
+  if option=="Memphis Grizzlies":
     st.header('主場:FedExForum Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -536,7 +536,7 @@ def teams_map(option):
         st.image(image1)
     
     
-  if option=="New Orleans Pelicans"
+  if option=="New Orleans Pelicans":
     st.header('主場:Smoothie King Center')
     col1, col2 = st.columns(2)
     with col1:
@@ -555,7 +555,7 @@ def teams_map(option):
         image1 = Image.open('Home/Smoothie_King_Center_Tickets.jpg')
         st.image(image1)
     
-  if option=="San Antonio Spurs"
+  if option=="San Antonio Spurs":
     st.header('主場:ATT Center')
     col1, col2 = st.columns(2)
     with col1:
