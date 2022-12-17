@@ -1,5 +1,8 @@
 import streamlit as st  
+import folium 
 from PIL import Image  
+from streamlit_folium import folium_static 
+
 def teams_map(option):
   if option=="Boston Celtics":
     st.header('主場:TD Garden')
