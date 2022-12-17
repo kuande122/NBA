@@ -35,10 +35,11 @@ teams_information.teams_information(option)
 teams_map.teams_map(option)
 
 
-teams_data=pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
+
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
+  teams_data=pd.read_excel("nbateamsdata.xlsx",sheet_name=option)
   st.dataframe(teams_data)
 with col2: 
   dount_chart_df = pd.read_excel("nbateamsdata(dount_chart).xlsx",sheet_name=option)
@@ -57,15 +58,10 @@ col1,col2=st.columns((5,5))
 with col2:
   #teamsPitching_Brothers=pd.read_excel("teamsPitching.xlsx",sheet_name=option) 
       plt.style.use("ggplot")
-      plt.plot(teams_data.年度, teamsPitching_Brothers.防禦率,'.-' ,color='yellow') 
-      plt.plot(teamsPitching_Unilions.年度, teamsPitching_Unilions.防禦率,'.-' ,color='darkorange')
-      plt.plot(teamsPitching_Dragons.年度, teamsPitching_Dragons.防禦率, '.-',color='red')
-      plt.plot(teamsPitching_Guardians.年度, teamsPitching_Guardians.防禦率,'.-', color='darkblue')
-      plt.plot(teamsPitching_Rakuten.年度, teamsPitching_Rakuten.防禦率,'.-', color='maroon')
-      plt.plot(teamsPitching_TSGHAWKS.年度, teamsPitching_TSGHAWKS.防禦率,'.-', color='darkgreen')
+      plt.plot(teams_data.年份, teams_data.勝率PCT,'.-') 
       plt.xlabel('Season',fontsize="10")
-      plt.ylabel('ERA',fontsize="10")
-      plt.title('ERA')
+      plt.ylabel('PCT',fontsize="10")
+      plt.title(option+'vs ')
       plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
       st.pyplot(plt) 
 
