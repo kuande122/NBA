@@ -1,6 +1,6 @@
 import streamlit as st  
 from PIL import Image  
-def teams_information(option):
+def teams_information(option,teams):
   if option=="Boston Celtics":
     col1, col2 = st.columns(2)
     with col1:
@@ -16,7 +16,9 @@ def teams_information(option):
     col1, col2= st.columns(2)
     col1.metric("聯盟冠軍🏆", "17  次")
     col2.metric("分組冠軍🏆", "22  次")   
-    
+    teams="Boston Celtics"
+    return teams
+
   if option=="Brooklyn Nets":
     col1, col2 = st.columns(2)
     with col1:
@@ -479,3 +481,4 @@ def teams_information(option):
     col1, col2= st.columns(2)
     col1.metric("總冠軍🏆", "5  次")
     col2.metric("區冠軍🏆", "6  次")
+st.write(teams)
