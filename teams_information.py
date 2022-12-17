@@ -61,7 +61,7 @@ def teams_information(option):
     col1, col2= st.columns(2)
     col1.metric("聯盟冠軍🏆", "3  次")
     col2.metric("分組冠軍🏆", "9  次")   
-  if option=="TorontoRaptors":
+  if option=="Toronto Raptors":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/TorontoRaptors.png')
