@@ -51,8 +51,26 @@ with col2:
 st.markdown('### 2021-22球員戰績')
 players_data=pd.read_excel("21-22playersdata.xlsx",sheet_name=option)
 st.dataframe(players_data)
-
-
+col1,col2=st.columns((5,5))
+    with col1:
+      teamsPitching_Brothers=pd.read_excel("teamsPitching.xlsx",sheet_name="中信兄弟") 
+      teamsPitching_Unilions=pd.read_excel("teamsPitching.xlsx",sheet_name="統一7-ELEVEn獅") 
+      teamsPitching_Rakuten=pd.read_excel("teamsPitching.xlsx",sheet_name="樂天桃猿")
+      teamsPitching_Guardians=pd.read_excel("teamsPitching.xlsx",sheet_name="富邦悍將")
+      teamsPitching_Dragons=pd.read_excel("teamsPitching.xlsx",sheet_name="味全龍")
+      teamsPitching_TSGHAWKS=pd.read_excel("teamsPitching.xlsx",sheet_name="台鋼雄鷹")
+      plt.style.use("ggplot")
+      plt.plot(teamsPitching_Brothers.年度, teamsPitching_Brothers.防禦率,'.-' ,color='yellow') 
+      plt.plot(teamsPitching_Unilions.年度, teamsPitching_Unilions.防禦率,'.-' ,color='darkorange')
+      plt.plot(teamsPitching_Dragons.年度, teamsPitching_Dragons.防禦率, '.-',color='red')
+      plt.plot(teamsPitching_Guardians.年度, teamsPitching_Guardians.防禦率,'.-', color='darkblue')
+      plt.plot(teamsPitching_Rakuten.年度, teamsPitching_Rakuten.防禦率,'.-', color='maroon')
+      plt.plot(teamsPitching_TSGHAWKS.年度, teamsPitching_TSGHAWKS.防禦率,'.-', color='darkgreen')
+      plt.xlabel('Season',fontsize="10")
+      plt.ylabel('ERA',fontsize="10")
+      plt.title('ERA')
+      plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
+      st.pyplot(plt) 
 
 
 
