@@ -1,6 +1,6 @@
 import streamlit as st  
 import folium 
-from PIL import Image  
+from PIL import Iage  
 from streamlit_folium import folium_static 
 
 def teams_map(option):
