@@ -4,6 +4,7 @@ import pandas as pd
 import xlrd  
 import openpyxl
 def teams_legendplayer():
-  if teams_list=='Boston Celtics':
-    legendplayer_list={'Bill Russell','Larry Bird','Paul Pierce'}
-  return legendplayer_list
+  legend_list={'Boston Celtics':{'Bill Russell','Larry Bird','Paul Pierce'},'Brooklyn Nets':{'Julius Erving','Jason Kidd','Derrick Coleman'}}
+  option_legendplayer = st.sidebar.selectbox('選擇球員？',legend_list[option])
+return option_legendplayer
+option_legendplayer=teams_legendplayer()
