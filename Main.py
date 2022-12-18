@@ -30,7 +30,13 @@ def area():
   return teams_list
 teams_list=area()
 
-legend_list={'Boston Celtics':{'Bill Russell','Larry Bird','Paul Pierce'},'Brooklyn Nets':{'Julius Erving','Jason Kidd','Derrick Coleman'}}
+legend_list={'Boston Celtics':{'Bill Russell','Larry Bird','Paul Pierce'},'Brooklyn Nets':{'Julius Erving','Jason Kidd','Derrick Coleman'},'New York Knicks':{'Walt Frazier','Patrick Ewing','Willis Reed'},
+            'Philadelphia 76ers':{'Dikembe Mutombo','Allen Iverson','Wilt Chamberlain'},'Toronto Raptors':{'Kyle Lowry','Chris Bosh','Vince Carter'},'Chicago Bulls':{'Michael Jordan','Dennis Rodman','Scottie Pippen'},
+            'Cleveland Cavaliers':{'LeBron James','Kevin Love','Kyrie Irving'},'Detroit Pistons':{'Isiah Thomas','Ben Wallace','Grant Hill'},'Indiana Pacers':{'Reggie Miller','Metta World Peace','Chuck Person'},
+            'Milwaukee Bucks':{'Sidney Moncrief','Giannis Antetokounmpo','Glenn Robinson'},'Golden State Warriors':{'Tim Hardaway','Klay thompson','Stephen Curry'},'Los Angeles Clippers':{'Bob McAdoo','Blake Griffin','Chris Paul'},
+            'Los Angeles Lakers':{'Magic Johnson',"Shaquille O'Neal",'Kobe Bryant'},'Phoenix Suns':{"Amar'e Stoudemire",'Steve Nash','Shawn Marion'},'Sacramento Kings':{'Chris Webber','Derek Harper','Rolando Blackman'},
+            'Dallas Mavericks':{'Dirk Nowitzki','Derek Harper','Rolando Blackman'},'Houston Rockets':{'Hakeem Olajuwon','Moses Malone','Yao Ming'},'Memphis Grizzlies':{'Zach Randolph','Marc Gasol','Mike Miller'},
+            'New Orleans Pelicans':{'Pete Maravich','Chris Paul','Anthony Davis'},'San Antonio Spurs':{'Tim Duncan','David Robinson','Manu Ginóbili'},}
 
 
 
