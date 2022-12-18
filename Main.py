@@ -6,7 +6,7 @@ import plost
 import matplotlib.pyplot as plt
 import teams_information
 import teams_map
-
+import teams_legendplayer
 st.set_page_config(layout="wide")
 st.title('NBA資訊面板系統')
 
@@ -58,7 +58,7 @@ st.dataframe(players_data)
 st.markdown('### 傳奇球星成績')
 col1,col2=st.columns(2)
 with col1:
- 
+  st.write(option_legendplayer)
 with col2:
 
 
