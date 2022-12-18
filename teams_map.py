@@ -101,7 +101,7 @@ def teams_map(option):
         
         
   if option=="Chicago Bulls":
-    st.header('主場:United Center')
+    st.markdown('### 主場: United Center')
     col1,col2 = st.columns((6,4))
     with col1:
         UnitedCenter= folium.Map(location=[41.880708350972725, -87.67417027269533], zoom_start=16)
@@ -110,8 +110,8 @@ def teams_map(option):
         folium.Marker([41.880708350972725, -87.67417027269533], popup="United Center", tooltip=tooltip
         ).add_to(UnitedCenter)
         folium_static(UnitedCenter)
-        st.write("""### 地址：1901 W Madison St, Chicago, IL 60612美國""")
-        st.write("""### 觀眾席數：21879席""")  
+        st.markdown('#### 地址：1901 W Madison St, Chicago, IL 60612美國')
+        st.markdown('#### 觀眾席數：21879席')  
     with col2:    
         image = Image.open('Home/United Center.jpg')
         st.image(image)     
@@ -120,7 +120,7 @@ def teams_map(option):
         
         
   if option=="Cleveland Cavaliers":
-    st.header('主場:Quicken Loans Arena')
+    st.markdown('### 主場: Quicken Loans Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
         QuickenLoansArena= folium.Map(location=[41.49661457628494, -81.68800263971569], zoom_start=16)
@@ -129,8 +129,8 @@ def teams_map(option):
         folium.Marker([41.49661457628494, -81.68800263971569], popup="Quicken Loans Arena", tooltip=tooltip
         ).add_to(QuickenLoansArena)
         folium_static(QuickenLoansArena)
-        st.write("""### 地址：1 Center Court, Cleveland, OH 44115美國""")
-        st.write("""### 觀眾席數：20562席""")
+        st.markdown('#### 地址：1 Center Court, Cleveland, OH 44115美國')
+        st.markdown('#### 觀眾席數：20562席')
     with col2:
         image = Image.open('Home/Quicken Loans Arena.jpg')       
         st.image(image)
@@ -139,7 +139,7 @@ def teams_map(option):
     
     
   if option=="Detroit Pistons":
-    st.header('主場:Little Caesars Arena')
+    st.markdown('### 主場: Little Caesars Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
         LittleCaesarsArena= folium.Map(location=[42.3412532527852, -83.05525657294322], zoom_start=16)
@@ -148,8 +148,8 @@ def teams_map(option):
         folium.Marker([42.3412532527852, -83.05525657294322], popup="Little Caesars Arena", tooltip=tooltip
         ).add_to(LittleCaesarsArena)
         folium_static(LittleCaesarsArena)
-        st.write("""### 地址:2645 Woodward Ave, Detroit, MI 48201美國""")
-        st.write("""### 觀眾席數:21000席""")
+        st.markdown('#### 地址:2645 Woodward Ave, Detroit, MI 48201美國')
+        st.markdown('#### 觀眾席數:21000席')
     with col2:   
         image = Image.open('Home/LittleCaesarsArena.jpg')       
         st.image(image)
@@ -158,7 +158,7 @@ def teams_map(option):
     
 
   if option=="Indiana Pacers":
-    st.header('主場:Gainbridge Fieldhouse')
+    st.markdown('### 主場: Gainbridge Fieldhouse')
     col1,col2 = st.columns((6,4))
     with col1:  
         GainbridgeFieldhouse= folium.Map(location=[39.76423306239759, -86.15505390428618], zoom_start=16)
@@ -167,8 +167,8 @@ def teams_map(option):
         folium.Marker([39.76423306239759, -86.15505390428618], popup="Gainbridge Fieldhouse", tooltip=tooltip
         ).add_to(GainbridgeFieldhouse)
         folium_static(GainbridgeFieldhouse)
-        st.write("""### 地址：125 S Pennsylvania St, Indianapolis, IN 46204美國""")
-        st.write("""### 觀眾席數：17923席""")
+        st.markdown('#### 地址：125 S Pennsylvania St, Indianapolis, IN 46204美國')
+        st.markdown('#### 觀眾席數：17923席')
 
     with col2:
         image = Image.open('Home/GainbridgeFieldhouse.jpg')       
@@ -177,7 +177,7 @@ def teams_map(option):
         st.image(image1)
    
   if option=="Milwaukee Bucks":
-    st.header('主場:Fiserv Forum')
+    st.markdown('### 主場: Fiserv Forum')
     col1,col2 = st.columns((6,4))
     with col1:
         FiservForum= folium.Map(location=[43.0451977912526, -87.91697850606084], zoom_start=16)
@@ -186,8 +186,8 @@ def teams_map(option):
         folium.Marker([43.0451977912526, -87.91697850606084], popup="Fiserv Forum", tooltip=tooltip
         ).add_to(FiservForum)
         folium_static(FiservForum)
-        st.write("""### 地址：1111 Vel R. Phillips Ave, Milwaukee, WI 53203美國""")
-        st.write("""### 觀眾席數：17385席""")      
+        st.markdown('#### 地址：1111 Vel R. Phillips Ave, Milwaukee, WI 53203美國')
+        st.markdown('#### 觀眾席數：17385席')      
    
     with col2:
         image = Image.open('Home/FiservForum.jpg')       
@@ -197,7 +197,7 @@ def teams_map(option):
     
 
   if option=="Atlanta Hawks":
-    st.header('主場:State Farm Arena')
+    st.markdown('### 主場: State Farm Arena')
     col1,col2 = st.columns((6,4))
     with col1:
         StateFarmArena= folium.Map(location=[33.75737827997708, -84.39633513151331], zoom_start=16)
@@ -206,8 +206,8 @@ def teams_map(option):
         folium.Marker([33.75737827997708, -84.39633513151331], popup="State Farm Arena", tooltip=tooltip
         ).add_to(StateFarmArena)
         folium_static(StateFarmArena)
-        st.write("""### 地址：1 State Farm Dr, Atlanta, GA 30303美國""")
-        st.write("""### 觀眾席數：18371席""")
+        st.markdown('#### 地址：1 State Farm Dr, Atlanta, GA 30303美國')
+        st.markdown('#### 觀眾席數：18371席')
        
     with col2:     
         image = Image.open('Home/State Farm Arena.jpeg')
@@ -217,7 +217,7 @@ def teams_map(option):
     
   
   if option=="Charlotte Hornets":
-    st.header('主場:Spectrum Center')
+    st.markdown('### 主場: Spectrum Center')
     col1,col2 = st.columns((6,4))
     with col1: 
         SpectrumCenter= folium.Map(location=[35.22528408738218, -80.83934793137779], zoom_start=16)
@@ -226,8 +226,8 @@ def teams_map(option):
         folium.Marker([35.22528408738218, -80.83934793137779], popup="Spectrum Center", tooltip=tooltip
         ).add_to(SpectrumCenter)
         folium_static(SpectrumCenter)
-        st.write("""### 地址：333 E Trade St, Charlotte, NC 28202美國""")
-        st.write("""### 觀眾席數：20200席""")
+        st.markdown('#### 地址：333 E Trade St, Charlotte, NC 28202美國')
+        st.markdown('#### 觀眾席數：20200席')
 
     with col2:
         image = Image.open('Home/Spectrum Center.jpeg')       
@@ -237,7 +237,7 @@ def teams_map(option):
     
   
   if option=="Miami Heat":
-    st.header('主場:FTX Arena')
+    st.markdown('### 主場: FTX Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
         FTXArena= folium.Map(location=[25.78136, -80.18793], zoom_start=16)
@@ -246,8 +246,8 @@ def teams_map(option):
         folium.Marker([25.78136, -80.18793], popup="FTX Arena", tooltip=tooltip
         ).add_to(FTXArena)
         folium_static(FTXArena)
-        st.write("""### 地址：601 Biscayne Blvd, Miami, FL 33132美國""")
-        st.write("""### 觀眾席數：19600席""")
+        st.markdown('#### 地址：601 Biscayne Blvd, Miami, FL 33132美國')
+        st.markdown('#### 觀眾席數：19600席')
         
     with col2:
         image = Image.open('Home/FTX Arena.jpeg')       
@@ -255,7 +255,7 @@ def teams_map(option):
         image1 =Image.open('Home/FTX Arena1.jpg')
         st.image(image1)
   if option=="Orlando Magic":
-    st.header('主場:Amway Center')
+    st.markdown('### 主場: Amway Center')
     col1,col2 = st.columns((6,4))
     with col1:  
         AmwayCenter= folium.Map(location=[28.539343909610295, -81.38387496040187], zoom_start=16)
@@ -264,8 +264,8 @@ def teams_map(option):
         folium.Marker([28.539343909610295, -81.38387496040187], popup="Amway Center", tooltip=tooltip
         ).add_to(AmwayCenter)
         folium_static(AmwayCenter)
-        st.write("""### 地址：400 W Church St Suite 200, Orlando, FL 32801美國""")
-        st.write("""### 觀眾席數：18846席""")
+        st.markdown('#### 地址：400 W Church St Suite 200, Orlando, FL 32801美國')
+        st.markdown('#### 觀眾席數：18846席')
         
     with col2:
         image = Image.open('Home/Amway Center.jpeg')       
@@ -275,7 +275,7 @@ def teams_map(option):
     
   
   if option=="Washington Wizards":
-    st.header('主場:Capital One Arena')
+    st.markdown('### 主場: Capital One Arena')
     col1,col2 = st.columns((6,4))
     with col1:        
         CapitalOneArena= folium.Map(location=[38.89830942692672, -77.02088898904876], zoom_start=16)
@@ -284,8 +284,8 @@ def teams_map(option):
         folium.Marker([38.89830942692672, -77.02088898904876], popup="Capital One Arena", tooltip=tooltip
         ).add_to(CapitalOneArena)
         folium_static(CapitalOneArena)
-        st.write("""### 地址：601 F St NW, Washington, DC 20004美國""")
-        st.write("""### 觀眾席數：20,356席""")
+        st.markdown('#### 地址：601 F St NW, Washington, DC 20004美國')
+        st.markdown('#### 觀眾席數：20,356席')
     with col2:
         image = Image.open('Home/Capital One Arena.jpeg')       
         st.image(image)
@@ -293,7 +293,7 @@ def teams_map(option):
         st.image(image1)
    
   if option=="Denver Nuggets":
-    st.header('主場:Ball Arena')
+    st.markdown('### 主場: Ball Arena')
     col1,col2 = st.columns((6,4))
     with col1:
         BallArena= folium.Map(location=[39.74868, -105.00758], zoom_start=16)
@@ -302,8 +302,8 @@ def teams_map(option):
         folium.Marker([39.74868, -105.00758], popup="Ball Arena", tooltip=tooltip
         ).add_to(BallArena)
         folium_static(BallArena)
-        st.write("""### 地址：1000 Chopper Cir, Denver, CO 80204美國""")
-        st.write("""### 觀眾席數：19155席""")     
+        st.markdown('#### 地址：1000 Chopper Cir, Denver, CO 80204美國')
+        st.markdown('#### 觀眾席數：19155席')     
     with col2:   
         image = Image.open('Home/Ball Arena .jpeg')
         st.image(image) 
@@ -312,7 +312,7 @@ def teams_map(option):
    
   
   if option=="Minnesota Timberwolves":
-    st.header('主場:Target Center')
+    st.markdown('### 主場: Target Center')
     col1,col2 = st.columns((6,4))
     with col1:
         TargetCenter= folium.Map(location=[44.97956, -93.27617], zoom_start=16)
@@ -321,8 +321,8 @@ def teams_map(option):
         folium.Marker([44.97956, -93.27617], popup="Target Center", tooltip=tooltip
         ).add_to(TargetCenter)
         folium_static(TargetCenter)
-        st.write("""### 地址：600 N 1st Ave, Minneapolis, MN 55403美國""")
-        st.write("""### 觀眾席數：18798席""")      
+        st.markdown('#### 地址：600 N 1st Ave, Minneapolis, MN 55403美國')
+        st.markdown('#### 觀眾席數：18798席')      
     with col2:
         image = Image.open('Home/Target Center.jpeg')       
         st.image(image)
@@ -330,7 +330,7 @@ def teams_map(option):
         st.image(image1)
    
   if option=="Oklahoma City Thunder":
-    st.header('主場:Chesapeake Energy Arena')
+    st.markdown('### 主場: Chesapeake Energy Arena')
     col1,col2 = st.columns((6,4))
     with col1: 
         ChesapeakeEnergyArena= folium.Map(location=[35.4634, -97.5151], zoom_start=16)
@@ -339,8 +339,8 @@ def teams_map(option):
         folium.Marker([35.4634, -97.5151], popup="Chesapeake Energy Arena", tooltip=tooltip
         ).add_to(ChesapeakeEnergyArena)
         folium_static(ChesapeakeEnergyArena)
-        st.write("""### 地址：100 W Reno Ave, Oklahoma City, OK 73102美國""")
-        st.write("""### 觀眾席數：18203席""") 
+        st.markdown('#### 地址：100 W Reno Ave, Oklahoma City, OK 73102美國')
+        st.markdown('#### 觀眾席數：18203席') 
     with col2:
         image = Image.open('Home/Chesapeake Energy Arena .jpeg')       
         st.image(image)
@@ -348,7 +348,7 @@ def teams_map(option):
         st.image(image1)
     
   if option=="Portland Trail Blazers":
-    st.header('主場:Moda Center')
+    st.markdown('### 主場: Moda Center')
     col1,col2 = st.columns((6,4))
     with col1:   
         ModaCenter= folium.Map(location=[45.53158, -122.66685], zoom_start=16)
@@ -357,8 +357,8 @@ def teams_map(option):
         folium.Marker([45.53158, -122.66685], popup="Moda Center", tooltip=tooltip
         ).add_to(ModaCenter)
         folium_static(ModaCenter)
-        st.write("""### 地址：1 N Center Ct St, Portland, OR 97227美國""")
-        st.write("""### 觀眾席數：20630席""")
+        st.markdown('#### 地址：1 N Center Ct St, Portland, OR 97227美國')
+        st.markdown('#### 觀眾席數：20630席')
     with col2:
         image = Image.open('Home/Moda Center.jpeg')       
         st.image(image)
@@ -366,7 +366,7 @@ def teams_map(option):
         st.image(image1)
  
   if option=="Utah Jazz":
-    st.header('主場:Vivint Arena')
+    st.markdown('### 主場: Vivint Arena')
     col1,col2 = st.columns((6,4))
     with col1:
         VivintArena= folium.Map(location=[40.76832, -111.90108], zoom_start=16)
@@ -375,8 +375,8 @@ def teams_map(option):
         folium.Marker([40.76832, -111.90108], popup="Vivint Arena", tooltip=tooltip
         ).add_to(VivintArena)
         folium_static(VivintArena)
-        st.write("""### 地址：301 S Temple, Salt Lake City, UT 84101美國""")
-        st.write("""### 觀眾席數：20000席""")  
+        st.markdown('#### 地址：301 S Temple, Salt Lake City, UT 84101美國')
+        st.markdown('#### 觀眾席數：20000席')  
 
     with col2:
         image = Image.open('Home/Vivint Arena.jpeg')       
@@ -384,7 +384,7 @@ def teams_map(option):
         image1 =Image.open('Home/Vivint Arena1.jpeg')
         st.image(image1)
   if option=="Golden State Warriors":
-    st.header('主場:Chase Center')
+    st.markdown('### 主場: Chase Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Chase_Center= folium.Map(location=[37.768056, -122.3875], zoom_start=16)
@@ -393,8 +393,8 @@ def teams_map(option):
         folium.Marker([37.768056, -122.3875], popup="Chase Center", tooltip=tooltip
         ).add_to(Chase_Center)
         folium_static(Chase_Center)
-        st.write("""### 地址：1 Warriors Way, San Francisco, CA 94158美國""")
-        st.write("""### 觀眾席數：18064席""")           
+        st.markdown('#### 地址：1 Warriors Way, San Francisco, CA 94158美國')
+        st.markdown('#### 觀眾席數：18064席')           
     with col2:       
         image = Image.open('Home/Chase_Center.jpg')
         st.image(image)   
@@ -403,7 +403,7 @@ def teams_map(option):
     
   
   if option=="Los Angeles Clippers":
-    st.header('主場:Staples Center')
+    st.markdown('### 主場: Staples Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Staples_Center= folium.Map(location=[34.043056, -118.267222], zoom_start=16)
@@ -412,8 +412,8 @@ def teams_map(option):
         folium.Marker([34.043056, -118.267222], popup="Staples Center", tooltip=tooltip
         ).add_to(Staples_Center)
         folium_static(Staples_Center)
-        st.write("""### 地址：1111 S Figueroa St, Los Angeles, CA 90015美國""")
-        st.write("""### 觀眾席數：19060人""")
+        st.markdown('#### 地址：1111 S Figueroa St, Los Angeles, CA 90015美國')
+        st.markdown('#### 觀眾席數：19060人')
         
     with col2:
         image = Image.open('Home/Staples_Center.jpg')
@@ -422,7 +422,7 @@ def teams_map(option):
         st.image(image1)
    
   if option=="Los Angeles Lakers":
-    st.header('主場:Staples Center')
+    st.markdown('### 主場: Staples Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Staples_Center= folium.Map(location=[34.043056, -118.267222], zoom_start=16)
@@ -431,8 +431,8 @@ def teams_map(option):
         folium.Marker([34.043056, -118.267222], popup="Staples Center", tooltip=tooltip
         ).add_to(Staples_Center)
         folium_static(Staples_Center)
-        st.write("""### 地址：1111 S Figueroa St, Los Angeles, CA 90015美國""")
-        st.write("""### 觀眾席數：19060人""")
+        st.markdown('#### 地址：1111 S Figueroa St, Los Angeles, CA 90015美國')
+        st.markdown('#### 觀眾席數：19060人')
         
     with col2:
         image = Image.open('Home/Staples_Center.jpg')
@@ -442,7 +442,7 @@ def teams_map(option):
     
   
   if option=="Phoenix Suns":
-    st.header('主場:Footprint Center')
+    st.markdown('### 主場: Footprint Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Footprint_Center= folium.Map(location=[33.445833,-112.071389], zoom_start=16)
@@ -451,8 +451,8 @@ def teams_map(option):
         folium.Marker([33.445833,-112.071389], popup="Footprint Center", tooltip=tooltip
         ).add_to(Footprint_Center)
         folium_static(Footprint_Center)
-        st.write("""### 地址：US Airways Center, 201S 1st St, Phoenix, AZ 85004美國""")
-        st.write("""### 觀眾席數：18422人""")
+        st.markdown('#### 地址：US Airways Center, 201S 1st St, Phoenix, AZ 85004美國')
+        st.markdown('#### 觀眾席數：18422人')
      
     with col2:     
         image = Image.open('Home/Footprint_Center.jpg')
@@ -462,7 +462,7 @@ def teams_map(option):
     
 
   if option=="Sacramento Kings":
-    st.header('主場:Golden1 Center')
+    st.markdown('### 主場: Golden1 Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Golden1_Center= folium.Map(location=[38.580361, -121.499611], zoom_start=16)
@@ -471,8 +471,8 @@ def teams_map(option):
         folium.Marker([38.580361, -121.499611], popup="Golden1 Center", tooltip=tooltip
         ).add_to(Golden1_Center)
         folium_static(Golden1_Center)
-        st.write("""### 地址：500 David J Stern Walk, Sacramento, CA 95814美國""")
-        st.write("""### 觀眾席數：17500人""")  
+        st.markdown('#### 地址：500 David J Stern Walk, Sacramento, CA 95814美國')
+        st.markdown('#### 觀眾席數：17500人')  
          
     with col2:       
         image = Image.open('Home/Golden1_Center.jpg')
@@ -481,7 +481,7 @@ def teams_map(option):
         st.image(image1)
    
   if option=="Dallas Mavericks":
-    st.header('主場:American Airlines Center')
+    st.markdown('### 主場: American Airlines Center')
     col1,col2 = st.columns((6,4))
     with col1:
         American_Airlines_Center= folium.Map(location=[32.790556, -96.810278], zoom_start=16)
@@ -490,8 +490,8 @@ def teams_map(option):
         folium.Marker([32.790556, -96.810278], popup="American Airlines Center", tooltip=tooltip
         ).add_to(American_Airlines_Center)
         folium_static(American_Airlines_Center)
-        st.write("""### 地址：2500 Victory Ave, Dallas, TX 75219美國""")
-        st.write("""### 觀眾席數：20000-21041席""")
+        st.markdown('#### 地址：2500 Victory Ave, Dallas, TX 75219美國')
+        st.markdown('#### 觀眾席數：20000-21041席')
       
     with col2:   
         image = Image.open('Home/American_Airlines_Center.jpg')
@@ -501,7 +501,7 @@ def teams_map(option):
     
   
   if option=="Houston Rockets":
-    st.header('主場:Toyota Center')
+    st.markdown('### 主場:Toyota Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Toyota_Center= folium.Map(location=[29.750833, -95.362222], zoom_start=16)
@@ -510,8 +510,8 @@ def teams_map(option):
         folium.Marker([29.750833, -95.362222], popup="Toyota Center", tooltip=tooltip
         ).add_to(Toyota_Center)
         folium_static(Toyota_Center)
-        st.write("""### 地址：1510 Polk St, Houston, TX 77002美國""")
-        st.write("""### 觀眾席數：18300人""")
+        st.markdown('#### 地址：1510 Polk St, Houston, TX 77002美國')
+        st.markdown('#### 觀眾席數：18300人')
 
     with col2:     
         image = Image.open('Home/Toyota_Center.jpg')
@@ -520,7 +520,7 @@ def teams_map(option):
         st.image(image1)
     
   if option=="Memphis Grizzlies":
-    st.header('主場:FedExForum Center')
+    st.markdown('### 主場: FedExForum Center')
     col1,col2 = st.columns((6,4))
     with col1:
         FedExForum_Center= folium.Map(location=[35.138333, -90.050556], zoom_start=16)
@@ -529,8 +529,8 @@ def teams_map(option):
         folium.Marker([35.138333, -90.050556], popup="FedExForum Center", tooltip=tooltip
         ).add_to(FedExForum_Center)
         folium_static(FedExForum_Center)
-        st.write("""### 地址：191 Beale St, Memphis, TN 38103美國""")
-        st.write("""### 觀眾席數：17794人""")
+        st.markdown('#### 地址：191 Beale St, Memphis, TN 38103美國')
+        st.markdown('#### 觀眾席數：17794人')
            
     with col2:   
         image = Image.open('Home/FedExForum_Center.jpg')
@@ -540,7 +540,7 @@ def teams_map(option):
     
     
   if option=="New Orleans Pelicans":
-    st.header('主場:Smoothie King Center')
+    st.markdown('### 主場: Smoothie King Center')
     col1,col2 = st.columns((6,4))
     with col1:
         Smoothie_King_Center= folium.Map(location=[29.948889, -90.081944], zoom_start=16)
@@ -549,8 +549,8 @@ def teams_map(option):
         folium.Marker([29.948889, -90.081944], popup="Smoothie King Center", tooltip=tooltip
         ).add_to(Smoothie_King_Center)
         folium_static(Smoothie_King_Center)
-        st.write("""### 地址：1501 Dave Dixon Dr, New Orleans, LA 70113美國""")
-        st.write("""### 觀眾席數：16867人""")
+        st.markdown('#### 地址：1501 Dave Dixon Dr, New Orleans, LA 70113美國')
+        st.markdown('#### 觀眾席數：16867人')
    
     with col2:      
         image = Image.open('Home/Smoothie_King_Center.jpg')
@@ -559,7 +559,7 @@ def teams_map(option):
         st.image(image1)
     
   if option=="San Antonio Spurs":
-    st.header('主場:ATT Center')
+    st.markdown('### 主場: ATT Center')
     col1,col2 = st.columns((6,4))
     with col1:
         ATT_Center= folium.Map(location=[29.426944, -98.4375], zoom_start=16)
@@ -568,8 +568,8 @@ def teams_map(option):
         folium.Marker([29.426944, -98.4375], popup="ATT Center", tooltip=tooltip
         ).add_to(ATT_Center)
         folium_static(ATT_Center)
-        st.write("""### 地址：1 AT&T Center Parkway, San Antonio, TX 78219美國""")
-        st.write("""### 觀眾席數：18418人""")
+        st.markdown('#### 地址：1 AT&T Center Parkway, San Antonio, TX 78219美國')
+        st.markdown('#### 觀眾席數：18418人')
     
     with col2:        
         image = Image.open('Home/ATT_Center.jpg')
