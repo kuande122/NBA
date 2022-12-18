@@ -55,7 +55,7 @@ st.markdown('### 2021-22球員戰績')
 players_data=pd.read_excel("21-22playersdata.xlsx",sheet_name=option)
 st.dataframe(players_data)
 
-st.markdown('### option'+'### 傳奇球星成績')
+st.markdown(option+'### 傳奇球星成績')
 
 
 
