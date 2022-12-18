@@ -56,7 +56,10 @@ players_data=pd.read_excel("21-22playersdata.xlsx",sheet_name=option)
 st.dataframe(players_data)
 
 st.markdown('### 傳奇球星成績')
-
+col1,col2=st.columns(2)
+with col1:
+ 
+with col2:
 
 
 
