@@ -2,11 +2,12 @@ import streamlit as st
 import folium 
 from PIL import Image  
 from streamlit_folium import folium_static 
+st.set_page_config(layout="wide")
 
 def teams_map(option):
   if option=="Boston Celtics":
     st.markdown('### 主場: TD Garden')
-    col1,col2 = st.columns(6,4)
+    col1,col2 = st.columns((6,4))
     with col1: 
         TDGarden= folium.Map(location=[42.36622394101576, -71.06214665765047], zoom_start=16)
               # add marker for Liberty Bell
