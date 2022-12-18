@@ -81,7 +81,10 @@ st.markdown('### 傳奇球星成績')
 col1,col2=st.columns(2)
 with col1:
    option_legendplayer = st.selectbox('選擇球員？',legend_list[option])
-
+   legendplayer_data = pd.read_excel("teams_legendplayerdata.xlsx",index_col='球員')      
+   legendplayer_data=legendplayer_data.loc[option_legendplayer]
+   legendplayer_data=legendplayer_data.reset_index(drop=False)
+   st.dataframe(legendplayer_data.T)
 
 
 
