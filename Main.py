@@ -54,16 +54,6 @@ with col2:
 st.markdown('### 2021-22球員戰績')
 players_data=pd.read_excel("21-22playersdata.xlsx",sheet_name=option)
 st.dataframe(players_data)
-col1,col2=st.columns((5,5))
-with col2:
-  #teamsPitching_Brothers=pd.read_excel("teamsPitching.xlsx",sheet_name=option) 
-      plt.style.use("ggplot")
-      plt.plot(teams_data.年份, teams_data.勝率PCT,'.-') 
-      plt.xlabel('Season',fontsize="10")
-      plt.ylabel('PCT',fontsize="10")
-      plt.title(option+'vs ')
-      plt.legend(labels=["Brothers Pitching", "Unilions Pitching","Dragons Pitching","Guardians Pitching","Rakuten Pitching","TSGHAWKS Pitching"], loc = 'best')
-      st.pyplot(plt) 
 
 
 
