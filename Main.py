@@ -29,6 +29,19 @@ def area():
       teams_list = {'Dallas Mavericks', 'Houston Rockets', 'Memphis Grizzlies', 'New Orleans Pelicans','San Antonio Spurs'}
   return teams_list
 teams_list=area()
+
+legend_list={'Boston Celtics':{'Bill Russell','Larry Bird','Paul Pierce'},'Brooklyn Nets':{'Julius Erving','Jason Kidd','Derrick Coleman'}}
+
+
+
+
+
+
+
+
+
+
+
 option = st.sidebar.selectbox('選擇球隊？',teams_list)
 
 teams_information.teams_information(option)
@@ -58,7 +71,7 @@ st.dataframe(players_data)
 st.markdown('### 傳奇球星成績')
 col1,col2=st.columns(2)
 with col1:
-  st.write(option_legendplayer)
+   option_legendplayer = st.sidebar.selectbox('選擇球員？',legend_list[option])
 
 
 
