@@ -39,7 +39,7 @@ legend_list={'Boston Celtics':{'Bill Russell','Larry Bird','Paul Pierce'},'Brook
             'New Orleans Pelicans':{'Pete Maravich','Chris Paul','Anthony Davis'},'San Antonio Spurs':{'Tim Duncan','David Robinson','Manu Ginóbili'},'Atlanta Hawks':{'Bob Pettit','Dikembe Mutombo','Jamal Crawford'},
             'Charlotte Hornets':{'Kemba Walker','Dell Curry','Larry Johnson'},'Miami Heat':{'Alonzo Mourning','Dwyane Wade','LeBron James'},'Washington Wizards':{'Wes Unseld','Elvin Hayes','Earl Monroe'},
             'Denver Nuggets':{'Fat Lever','Dan Issel','David Thompson'},'Minnesota Timberwolves':{'Kevin Garnett','Sam Mitchell','Sam Cassell'},'Oklahoma City Thunder':{'Russell Westbrook','Gary Payton','Kevin Durant'},
-            'Portland Trail Blazers':{'Bill Walton','Buck Williams','Clifford Robinson'},'Utah Jazz':{'Karl Malone','Darrell Griffith','John Stockton'}}
+            'Portland Trail Blazers':{'Bill Walton','Buck Williams','Clifford Robinson'},'Utah Jazz':{'Karl Malone','Darrell Griffith','John Stockton'},'Orlando Magic':{'Dwight Howard','Darrell Armstrong',"Shaquille O'Neal"}}
 
 
 
