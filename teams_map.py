@@ -6,7 +6,7 @@ from streamlit_folium import folium_static
 def teams_map(option):
   if option=="Boston Celtics":
     st.markdown('### 主場: TD Garden')
-    col1, col2 = st.columns(2)
+    col1,col2 = st.columns(6,4)
     with col1: 
         TDGarden= folium.Map(location=[42.36622394101576, -71.06214665765047], zoom_start=16)
               # add marker for Liberty Bell
@@ -14,8 +14,8 @@ def teams_map(option):
         folium.Marker([42.36622394101576, -71.06214665765047], popup="TD Garden", tooltip=tooltip
         ).add_to(TDGarden)
         folium_static(TDGarden)
-        st.write("""### 地址：100 Legends Way, Boston, MA 02114美國""")
-        st.write("""### 觀眾席數：18624席""")
+        st.markdown('#### 地址：100 Legends Way, Boston, MA 02114美國')
+        st.markdown('#### 觀眾席數：18624席')
     with col2:
         image = Image.open('Home/TD Garden.jpg')
         st.image(image)              
