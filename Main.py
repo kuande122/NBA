@@ -59,7 +59,7 @@ st.markdown('### 傳奇球星成績')
 col1,col2=st.columns(2)
 with col1:
   st.write(option_legendplayer)
-with col2:
+
 
 
 
