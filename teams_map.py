@@ -24,8 +24,8 @@ def teams_map(option):
         
         
   if option=="Brooklyn Nets":
-    st.header('主場:Barclays Center')
-    col1, col2 = st.columns(2)
+    st.markdown('### 主場: Barclays Center')
+    col1,col2 = st.columns((6,4))
     with col1: 
         BarclaysCenter= folium.Map(location=[40.682725423383374, -73.97526212020857], zoom_start=16)
             # add marker for Liberty Bell
@@ -33,8 +33,8 @@ def teams_map(option):
         folium.Marker([40.682725423383374, -73.97526212020857], popup="Barclays Center", tooltip=tooltip
         ).add_to(BarclaysCenter)
         folium_static(BarclaysCenter)  
-        st.write("""### 地址：620 Atlantic Ave, Brooklyn, NY 11217美國""")
-        st.write("""### 觀眾席數：17732席""")
+        st.markdown('#### 地址：620 Atlantic Ave, Brooklyn, NY 11217美國')
+        st.markdown('#### 觀眾席數：17732席')
     with col2:
         image = Image.open('Home/Barclays Center.jpg')       
         st.image(image)
@@ -43,8 +43,8 @@ def teams_map(option):
     
     
   if option=="New York Knicks":
-    st.header('主場:MSG The Garden')
-    col1, col2 = st.columns(2)
+    st.markdown('### 主場: MSG The Garden')
+    col1,col2 = st.columns((6,4))
     with col1: 
         MSGTheGarden= folium.Map(location=[40.7505, -73.99352], zoom_start=16)
             # add marker for Liberty Bell
@@ -52,8 +52,8 @@ def teams_map(option):
         folium.Marker([40.7505, -73.99352], popup="MSG The Garden", tooltip=tooltip
         ).add_to(MSGTheGarden)
         folium_static(MSGTheGarden)
-        st.write("""### 地址：4 Pennsylvania Plaza, New York, NY 10001美國""")
-        st.write("""### 觀眾席數：19812席""") 
+        st.markdown('#### 地址：4 Pennsylvania Plaza, New York, NY 10001美國')
+        st.markdown('#### 觀眾席數：19812席') 
     with col2:
         image = Image.open('Home/MSGTheGarden.jpg')       
         st.image(image)
@@ -62,8 +62,8 @@ def teams_map(option):
     
 
   if option=="Philadelphia 76ers":
-    st.header('主場:Wells Fargo Center')
-    col1, col2 = st.columns(2)
+    st.markdown('### 主場: Wells Fargo Center')
+    col1,col2 = st.columns((6,4))
     with col1:   
         wellsfargocenter= folium.Map(location=[39.90130024709659, -75.17162545031324], zoom_start=16)
             # add marker for Liberty Bell
@@ -71,8 +71,8 @@ def teams_map(option):
         folium.Marker([39.90130024709659, -75.17162545031324], popup="Wells Fargo Center", tooltip=tooltip
         ).add_to(wellsfargocenter)
         folium_static(wellsfargocenter)
-        st.write("""### 地址：3601 S Broad St, Philadelphia, PA 19148美國""")
-        st.write("""### 觀眾席數：21000席""")
+        st.markdown('#### 地址：3601 S Broad St, Philadelphia, PA 19148美國')
+        st.markdown('#### 觀眾席數：21000席')
     with col2:
         image = Image.open('Home/wellsfargocenter.jpg')       
         st.image(image)      
@@ -82,8 +82,8 @@ def teams_map(option):
         
         
   if option=="Toronto Raptors":
-    st.header('主場:Scotiabank Arena')
-    col1, col2 = st.columns(2)
+    st.markdown('### 主場: Scotiabank Arena')
+    col1,col2 = st.columns((6,4))
     with col1:  
         ScotiabankArena= folium.Map(location=[43.643485488886185, -79.37908251728793], zoom_start=16)
             # add marker for Liberty Bell
@@ -91,8 +91,8 @@ def teams_map(option):
         folium.Marker([43.643485488886185, -79.37908251728793], popup="Scotiabank Arena", tooltip=tooltip
         ).add_to(ScotiabankArena)
         folium_static(ScotiabankArena)
-        st.write("""### 地址：40 Bay St., Toronto, ON M5J 2X2加拿大""")
-        st.write("""### 觀眾席數：19800席""")    
+        st.markdown('#### 地址：40 Bay St., Toronto, ON M5J 2X2加拿大')
+        st.markdown('#### 觀眾席數：19800席')    
     with col2:
         image = Image.open('Home/ScotiabankArena.jpg')       
         st.image(image)
