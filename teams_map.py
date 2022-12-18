@@ -2,7 +2,6 @@ import streamlit as st
 import folium 
 from PIL import Image  
 from streamlit_folium import folium_static 
-st.set_page_config(layout="wide")
 
 def teams_map(option):
   if option=="Boston Celtics":
