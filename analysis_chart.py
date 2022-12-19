@@ -16,7 +16,26 @@ def analysis_chart(option_teams):
             plt.style.use("ggplot")
             plt.plot(teams_data.年度,teams_data.三分球命中率 ,'.-' ) 
             plt.plot(league_data.年度,league_data.三分球命中率,'.-' )
-        plt.xlabel('Season',fontsize="10")
-        plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
-        plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
-        st.pyplot(plt) 
+            plt.xlabel('Season',fontsize="10")
+            plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
+            plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
+            st.pyplot(plt) 
+
+        if option_data=='兩分球命中率':
+            plt.style.use("ggplot")
+            plt.plot(teams_data.年度,teams_data.兩分球命中率 ,'.-' ) 
+            plt.plot(league_data.年度,league_data.兩分球命中率,'.-' )
+            plt.xlabel('Season',fontsize="10")
+            plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
+            plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
+            st.pyplot(plt) 
+        
+        if option_data=='罰球球命中率':
+            plt.style.use("ggplot")
+            plt.plot(teams_data.年度,teams_data.罰球命中率 ,'.-' ) 
+            plt.plot(league_data.年度,league_data.罰球命中率,'.-' )
+            plt.xlabel('Season',fontsize="10")
+            plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
+            plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
+            st.pyplot(plt) 
+       
