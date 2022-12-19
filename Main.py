@@ -13,7 +13,7 @@ st.title('NBA資訊面板系統')
 
 st.sidebar.header('請選擇區域及球隊')
 area_list={'Atlantic','Central','Southeast','Northwest','Pacific','Southwest'}
-option_area = st.sidebar.selectbox('選擇球隊？',area_list)
+option_area = st.sidebar.selectbox('選擇區域？',area_list)
 
 def area():
   if option_area=='Atlantic':
