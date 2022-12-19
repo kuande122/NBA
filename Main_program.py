@@ -1,5 +1,7 @@
 import streamlit as st  
 import teams_information
+import teams_map
+
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="NBA Dashboard",
