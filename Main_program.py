@@ -41,12 +41,11 @@ with col2:
   dount_chart_df = pd.read_excel("data/nbateamsdata(dount_chart).xlsx",sheet_name=option_teams)
   st.markdown('### 年度戰績Donut chart')
   donut_theta = st.selectbox('選擇年度', ('14-15年','15-16年','16-17年','17-18年','18-19年','19-20年','20-21年','21-22年'))
-  plost.donut_chart(
-              data=dount_chart_df ,
-              theta=donut_theta,
-              color='項目',
-              legend='bottom',
-              use_container_width=True)
+  plost.donut_chart(data=dount_chart_df ,
+                    theta=donut_theta,
+                    color='項目',
+                    legend='bottom',
+                    use_container_width=True)
   
 
 #-----2021-22球員戰績---------------------------------------------------
@@ -56,15 +55,35 @@ st.dataframe(players_data)
 
 
 #-----三大傳奇球星成績--------------------------------------------------
+legend_list={'Boston Celtics':{'Bill Russell','Larry Bird','Paul Pierce'},'Brooklyn Nets':{'Julius Erving','Jason Kidd','Derrick Coleman'},'New York Knicks':{'Walt Frazier','Patrick Ewing','Willis Reed'},
+            'Philadelphia 76ers':{'Charles Barkley','Allen Iverson','Wilt Chamberlain'},'Toronto Raptors':{'Kyle Lowry','Chris Bosh','Vince Carter'},'Chicago Bulls':{'Michael Jordan','Dennis Rodman','Scottie Pippen'},
+            'Cleveland Cavaliers':{'LeBron James','Kevin Love','Kyrie Irving'},'Detroit Pistons':{'Isiah Thomas','Ben Wallace','Grant Hill'},'Indiana Pacers':{'Reggie Miller','Metta World Peace','Chuck Person'},
+            'Milwaukee Bucks':{'Sidney Moncrief','Giannis Antetokounmpo','Glenn Robinson'},'Golden State Warriors':{'Tim Hardaway','Klay thompson','Stephen Curry'},'Los Angeles Clippers':{'Bob McAdoo','Blake Griffin','Elton Brand'},
+            'Los Angeles Lakers':{'Magic Johnson',"Shaquille O'Neal",'Kobe Bryant'},'Phoenix Suns':{"Amar'e Stoudemire",'Steve Nash','Shawn Marion'},'Sacramento Kings':{'Chris Webber','Oscar Robertson','Doug Christie'},
+            'Dallas Mavericks':{'Dirk Nowitzki','Derek Harper','Rolando Blackman'},'Houston Rockets':{'Hakeem Olajuwon','Moses Malone','Yao Ming'},'Memphis Grizzlies':{'Zach Randolph','Marc Gasol','Mike Miller'},
+            'New Orleans Pelicans':{'Pete Maravich','Chris Paul','Anthony Davis'},'San Antonio Spurs':{'Tim Duncan','David Robinson','Manu Ginóbili'},'Atlanta Hawks':{'Bob Pettit','Dikembe Mutombo','Jamal Crawford'},
+            'Charlotte Hornets':{'Kemba Walker','Dell Curry','Larry Johnson'},'Miami Heat':{'Alonzo Mourning','Dwyane Wade','Grant Long'},'Washington Wizards':{'Wes Unseld','Elvin Hayes','Earl Monroe'},
+            'Denver Nuggets':{'Fat Lever','Dan Issel','David Thompson'},'Minnesota Timberwolves':{'Kevin Garnett','Sam Mitchell','Sam Cassell'},'Oklahoma City Thunder':{'Russell Westbrook','Gary Payton','Kevin Durant'},
+            'Portland Trail Blazers':{'Bill Walton','Buck Williams','Clifford Robinson'},'Utah Jazz':{'Karl Malone','Darrell Griffith','John Stockton'},'Orlando Magic':{'Dwight Howard','Darrell Armstrong',"Nick Anderson"}}
 st.markdown('### 三大傳奇球星成績')
 col1,col2=st.columns(2)
 with col1:
    option_legendplayer = st.selectbox('選擇球員？',legend_list[option_teams])
-   legendplayer_data = pd.read_excel("teams_legendplayerdata.xlsx",index_col='球員')      
+   legendplayer_data = pd.read_excel("data/teams_legendplayerdata.xlsx",index_col='球員')      
    legendplayer_data=legendplayer_data.loc[option_legendplayer]
    legendplayer_data=legendplayer_data.reset_index(drop=False)
    st.dataframe(legendplayer_data.T)
 with col2:
    image = Image.open('legendplayer'+'/'+option_legendplayer+'.jpg')
    st.image(image)  
+
+
+
+
+
+
+
+
+
+
 
