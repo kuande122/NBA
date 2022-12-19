@@ -52,3 +52,4 @@ def analysis_chart(option_teams):
            teams_data.plot.bar(x='年度',y='進攻籃板')
            league_data.plot.bar(x='年度',y='進攻籃板')
            st.pyplot(plt)
+           st.pyplot(plt)
