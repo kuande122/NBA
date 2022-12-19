@@ -51,7 +51,7 @@ with col2:
   
 #-----analysis_chart---------------------------------------------------
 st.markdown('### 球隊數據分析')
-st.dataframe(analysis_chart)
+analysis_chart.analysis_chart()
 
 
 #-----2021-22球員戰績---------------------------------------------------
