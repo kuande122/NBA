@@ -1,4 +1,5 @@
 import streamlit as st  
+import teams_information
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="NBA Dashboard",
@@ -17,3 +18,8 @@ area_list={'Atlantic':['Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Ph
            'Southwest':['Dallas Mavericks', 'Houston Rockets', 'Memphis Grizzlies', 'New Orleans Pelicans','San Antonio Spurs']}
 option_area = st.sidebar.selectbox('選擇區域？',area_list)
 option_teams = st.sidebar.selectbox('選擇球隊？',area_list[option_area])
+
+
+#-----teams_information&teams_map-----------------------------------------
+teams_information.teams_information(option_teams)
+teams_map.teams_map(option_teams)
