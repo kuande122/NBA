@@ -89,4 +89,6 @@ with col1:
 with col2:
    image = Image.open('legendplayer'+'/'+option_legendplayer+'.jpg')
    st.image(image)      
-
+   if option=='Philadelphia 76ers':
+      image = Image.open('legendplayer/Dikembe Mutombo_Philadelphia 76ers.jpg')
+      st.image(image)  
