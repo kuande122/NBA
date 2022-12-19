@@ -35,4 +35,6 @@ def analysis_chart(option_teams):
         plt.xlabel('Season',fontsize="10")
         plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
         plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
-        st.pyplot(plt)    
+        st.pyplot(plt)
+      if option_data=='進攻籃板'or'防守籃板'or'總籃板'or'助攻'or"抄截"or"火鍋"or"失誤"or"犯規"or"得分":
+        st.write('s')
