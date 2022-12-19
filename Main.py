@@ -87,6 +87,6 @@ with col1:
    legendplayer_data=legendplayer_data.reset_index(drop=False)
    st.dataframe(legendplayer_data.T)
 with col2:
-   image = Image.open('legendplayer'/option_legendplayer+'.jpg')
+   image = Image.open('legendplayer' / option_legendplayer+'.jpg')
    st.image(image)      
 
