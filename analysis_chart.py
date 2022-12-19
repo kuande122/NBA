@@ -5,7 +5,7 @@ import pandas as pd     #pandas套件(資料分析)
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
 def analysis_chart(option_teams):
     data_list={"三分球命中率":"3P%","兩分球命中率":"2P%","罰球命中率":"FT%","投籃命中率":"FG%","進攻籃板":"ORB","防守籃板":"DRB",
-               "總籃板數":"TRB","助攻":"AST","抄截":"STL","火鍋":"BLK","失誤":"TOV","犯規":"PF","得分":"PTS"}
+               "總籃板數":"TRB","總助攻":"AST","總抄截":"STL","總火鍋":"BLK","總失誤":"TOV","犯規次數":"PF","總得分":"PTS"}
     teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option_teams) 
     league_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name="League Average") 
     col1,col2=st.columns((4,6))
@@ -45,29 +45,29 @@ def analysis_chart(option_teams):
            plt.bar(teams_data.年度,teams_data.總籃板數)
            plt.bar(league_data.年度,league_data.總籃板數)   
        
-        if option_data=='助攻': 
-           plt.bar(teams_data.年度,teams_data.助攻)
-           plt.bar(league_data.年度,league_data.助攻)  
+        if option_data=='總助攻': 
+           plt.bar(teams_data.年度,teams_data.總助攻)
+           plt.bar(league_data.年度,league_data.總助攻)  
         
-        if option_data=='抄截': 
-           plt.bar(teams_data.年度,teams_data.抄截)
-           plt.bar(league_data.年度,league_data.抄截)  
+        if option_data=='總抄截': 
+           plt.bar(teams_data.年度,teams_data.總抄截)
+           plt.bar(league_data.年度,league_data.總抄截)  
             
-        if option_data=='火鍋': 
-           plt.bar(teams_data.年度,teams_data.火鍋)
-           plt.bar(league_data.年度,league_data.火鍋)       
+        if option_data=='總火鍋': 
+           plt.bar(teams_data.年度,teams_data.總火鍋)
+           plt.bar(league_data.年度,league_data.總火鍋)       
         
-        if option_data=='失誤': 
-           plt.bar(teams_data.年度,teams_data.失誤)
-           plt.bar(league_data.年度,league_data.失誤)    
+        if option_data=='總失誤': 
+           plt.bar(teams_data.年度,teams_data.總失誤)
+           plt.bar(league_data.年度,league_data.總失誤)    
          
-        if option_data=='犯規': 
-           plt.bar(teams_data.年度,teams_data.犯規)
-           plt.bar(league_data.年度,league_data.犯規)    
+        if option_data=='犯規次數': 
+           plt.bar(teams_data.年度,teams_data.犯規次數)
+           plt.bar(league_data.年度,league_data.犯規次數)    
         
-        if option_data=='得分':
-           plt.bar(teams_data.年度,teams_data.得分)
-           plt.bar(league_data.年度,league_data.得分)  
+        if option_data=='總得分':
+           plt.bar(teams_data.年度,teams_data.總得分)
+           plt.bar(league_data.年度,league_data.總得分)  
 
         plt.xlabel('Season',fontsize="10")
         plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
