@@ -36,7 +36,7 @@ teams_map.teams_map(option_teams)
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
-  teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option_teams)
+  teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option_teams,index_col='年度')
   st.dataframe(teams_data)
 with col2: 
   dount_chart_df = pd.read_excel("data/nbateamsdata(dount_chart).xlsx",sheet_name=option_teams)
@@ -56,7 +56,7 @@ analysis_chart.analysis_chart(option_teams)
 
 #-----2021-22球員戰績---------------------------------------------------
 st.markdown('### 2021-22球員戰績')
-players_data=pd.read_excel("data/21-22playersdata.xlsx",sheet_name=option_teams)
+players_data=pd.read_excel("data/21-22playersdata.xlsx",sheet_name=option_teams,index_col='Player')
 st.dataframe(players_data)
 
 
