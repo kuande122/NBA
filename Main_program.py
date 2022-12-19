@@ -6,7 +6,7 @@ import plost            #plost套件(甜甜圈圖)
 from PIL import Image   #圖片套件
 import teams_information
 import teams_map
-
+import analysis_chart
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="NBA Dashboard",
@@ -48,6 +48,10 @@ with col2:
                     legend='bottom',
                     use_container_width=True)
   
+  
+#-----analysis_chart---------------------------------------------------
+st.markdown('### 球隊數據分析')
+st.write(analysis_chart)
 
 #-----2021-22球員戰績---------------------------------------------------
 st.markdown('### 2021-22球員戰績')
@@ -79,6 +83,7 @@ with col2:
    st.image(image)  
 
 
+  
 
 
 
