@@ -1,4 +1,6 @@
-import streamlit as st  
+import streamlit as st  #streamlit套件
+import xlrd             #excel套件
+import openpyxl         #excel套件
 import teams_information
 import teams_map
 
