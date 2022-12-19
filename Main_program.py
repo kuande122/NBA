@@ -53,6 +53,7 @@ with col2:
 st.markdown('### 球隊數據分析')
 st.write(analysis_chart)
 
+
 #-----2021-22球員戰績---------------------------------------------------
 st.markdown('### 2021-22球員戰績')
 players_data=pd.read_excel("data/21-22playersdata.xlsx",sheet_name=option_teams)
