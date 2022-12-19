@@ -30,7 +30,7 @@ def analysis_chart(option_teams):
             plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
             st.pyplot(plt) 
         
-        if option_data=='罰球球命中率':
+        if option_data=='罰球命中率':
             plt.style.use("ggplot")
             plt.plot(teams_data.年度,teams_data.罰球命中率 ,'.-' ) 
             plt.plot(league_data.年度,league_data.罰球命中率,'.-' )
