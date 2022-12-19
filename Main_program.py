@@ -3,6 +3,7 @@ import xlrd             #excel套件
 import openpyxl         #excel套件
 import pandas as pd     #pandas套件(資料分析)
 import plost            #plost套件(甜甜圈圖)
+from PIL import Image   #圖片套件
 import teams_information
 import teams_map
 
