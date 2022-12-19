@@ -1,7 +1,7 @@
 import streamlit as st  
 from PIL import Image  
-def teams_information(option):
-  if option=="Boston Celtics":
+def teams_information(option_teams):
+  if option_teams=="Boston Celtics":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/BostonCeltics.png')
@@ -17,7 +17,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "17  次")
     col2.metric("分組冠軍🏆", "22  次")   
     
-  if option=="Brooklyn Nets":
+  if option_teams=="Brooklyn Nets":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/BrooklynNets.png')
@@ -33,7 +33,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "2  次")  
     
-  if option=="New York Knicks":
+  if option_teams=="New York Knicks":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/NewYorkKnicks.png')
@@ -49,7 +49,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "2  次")
     col2.metric("分組冠軍🏆", "8  次")   
     
-  if option=="Philadelphia 76ers":
+  if option_teams=="Philadelphia 76ers":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Philadelphia76ers.png')
@@ -65,7 +65,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "3  次")
     col2.metric("分組冠軍🏆", "9  次")   
     
-  if option=="Toronto Raptors":
+  if option_teams=="Toronto Raptors":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/TorontoRaptors.png')
@@ -81,7 +81,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "1  次")
     col2.metric("分組冠軍🏆", "1  次")   
     
-  if option=="Chicago Bulls":
+  if option_teams=="Chicago Bulls":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Chicago Bulls.png')
@@ -97,7 +97,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "6  次")
     col2.metric("分組冠軍🏆", "6  次")   
     
-  if option=="Cleveland Cavaliers":
+  if option_teams=="Cleveland Cavaliers":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Cleveland Cavaliers.png')
@@ -113,7 +113,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "1  次")
     col2.metric("分組冠軍🏆", "5  次")   
     
-  if option=="Detroit Pistons":
+  if option_teams=="Detroit Pistons":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Detroit Pistons.png')
@@ -129,7 +129,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "3  次")
     col2.metric("分組冠軍🏆", "7  次")   
     
-  if option=="Indiana Pacers":
+  if option_teams=="Indiana Pacers":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Indiana Pacers.png')
@@ -145,7 +145,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "1  次")   
     
-  if option=="Milwaukee Bucks":
+  if option_teams=="Milwaukee Bucks":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Milwaukee Bucks.png')
@@ -161,7 +161,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "2  次")
     col2.metric("分組冠軍🏆", "3  次")   
     
-  if option=="Denver Nuggets":
+  if option_teams=="Denver Nuggets":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Denver Nuggets.png')
@@ -177,7 +177,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "0  次")   
     
-  if option=="Minnesota Timberwolves":
+  if option_teams=="Minnesota Timberwolves":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Minnesota Timberwolves.jpeg')
@@ -193,7 +193,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "0  次")   
     
-  if option=="Oklahoma City Thunder":
+  if option_teams=="Oklahoma City Thunder":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Oklahoma City Thunder.png')
@@ -209,7 +209,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "1  次")
     col2.metric("分組冠軍🏆", "4  次")   
     
-  if option=="Portland Trail Blazers":
+  if option_teams=="Portland Trail Blazers":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Portland Trail Blazers.png')
@@ -225,7 +225,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "1  次")
     col2.metric("分組冠軍🏆", "3  次")    
     
-  if option=="Utah Jazz":
+  if option_teams=="Utah Jazz":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Utah Jazz.jpeg')
@@ -241,7 +241,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "2  次")   
     
-  if option=="Golden State Warriors":   #勇士
+  if option_teams=="Golden State Warriors":   #勇士
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Golden_State_Warriors.png')
@@ -257,7 +257,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "7  次")
     col2.metric("區冠軍🏆", "12  次")  
   
-  if option=="Los Angeles Clippers":   #快艇
+  if option_teams=="Los Angeles Clippers":   #快艇
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Los_Angeles_Clippers.png')
@@ -273,7 +273,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "0  次")
     col2.metric("區冠軍🏆", "0  次")
   
-  if option=="Los Angeles Lakers":   #湖人
+  if option_teams=="Los Angeles Lakers":   #湖人
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Los_Angeles_Lakers.png')
@@ -289,7 +289,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "17  次")
     col2.metric("區冠軍🏆", "32  次")
 
-  if option=="Phoenix Suns":   #太陽
+  if option_teams=="Phoenix Suns":   #太陽
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Phoenix_Suns.png')
@@ -305,7 +305,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "0  次")
     col2.metric("區冠軍🏆", "3  次")
 
-  if option=="Sacramento Kings":   #國王
+  if option_teams=="Sacramento Kings":   #國王
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Sacramento_Kings.png')
@@ -321,7 +321,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "1  次")
     col2.metric("區冠軍🏆", "1  次")
     
-  if option=="Atlanta Hawks":
+  if option_teams=="Atlanta Hawks":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Atlanta_Hawks.png')
@@ -337,7 +337,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "1  次")
     col2.metric("分組冠軍🏆", "4  次")   
     
-  if option=="Charlotte Hornets":
+  if option_teams=="Charlotte Hornets":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Charlotte Hornets.png')
@@ -353,7 +353,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "0  次")   
     
-  if option=="Miami Heat":
+  if option_teams=="Miami Heat":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Miami Heat.png')
@@ -368,7 +368,7 @@ def teams_information(option):
     col1, col2= st.columns(2)
     col1.metric("聯盟冠軍🏆", "3  次")
     col2.metric("分組冠軍🏆", "6  次")   
-  if option=="Orlando Magic":
+  if option_teams=="Orlando Magic":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Orlando Magic.png')
@@ -384,7 +384,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "0  次")
     col2.metric("分組冠軍🏆", "2  次")    
     
-  if option=="Washington Wizards":
+  if option_teams=="Washington Wizards":
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Washington Wizards.png')
@@ -400,7 +400,7 @@ def teams_information(option):
     col1.metric("聯盟冠軍🏆", "1  次")
     col2.metric("分組冠軍🏆", "4  次")   
   
-  if option=="Dallas Mavericks":   #獨行俠
+  if option_teams=="Dallas Mavericks":   #獨行俠
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Dallas_Mavericks.png')
@@ -416,7 +416,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "1  次")
     col2.metric("區冠軍🏆", "2  次")  
   
-  if option=="Houston Rockets":   #火箭
+  if option_teams=="Houston Rockets":   #火箭
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Houston_Rockets.png')
@@ -432,7 +432,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "0  次")
     col2.metric("區冠軍🏆", "0  次")
 
-  if option=="Memphis Grizzlies":   #灰熊
+  if option_teams=="Memphis Grizzlies":   #灰熊
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/Memphis_Grizzlies.png')
@@ -448,7 +448,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "0  次")
     col2.metric("區冠軍🏆", "0  次")
   
-  if option=="New Orleans Pelicans":   #鵜鶘
+  if option_teams=="New Orleans Pelicans":   #鵜鶘
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/New_Orleans_Pelicans.png')
@@ -464,7 +464,7 @@ def teams_information(option):
     col1.metric("總冠軍🏆", "0  次")
     col2.metric("區冠軍🏆", "0  次")
 
-  if option=="San Antonio Spurs":   #馬刺
+  if option_teams=="San Antonio Spurs":   #馬刺
     col1, col2 = st.columns(2)
     with col1:
       image = Image.open('teams logo/San_Antonio_Spurs.png')
