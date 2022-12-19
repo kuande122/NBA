@@ -17,5 +17,5 @@ def analysis_chart(option_teams):
             plt.plot(teams_data.年度,teams_data.三分球命中率 ,'.-' ) 
             plt.plot(league_data.年度,league_data.三分球命中率,'.-' )
             plt.xlabel('Season',fontsize="10")
-            plt.title(option_teams+" "+data_list[option_data]+"vs League Average")
+            plt.title(option_teams+" "+data_list[option_data]+ "vs League Average")
             st.pyplot(plt) 
