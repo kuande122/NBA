@@ -6,6 +6,7 @@ import plost
 import matplotlib.pyplot as plt
 import teams_information
 import teams_map
+from PIL import Image
 
 st.set_page_config(layout="wide")
 st.title('NBA資訊面板系統')
