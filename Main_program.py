@@ -5,6 +5,8 @@ st.set_page_config(page_title="NBA Dashboard",
                    page_icon='🏀',
                    layout="wide")
 st.title('NBA資訊面板系統')
+
+
 #-----Sidebar----------------------------------------------------
 st.sidebar.title('請選擇區域及球隊')
 area_list={'Atlantic':['Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphia 76ers','Toronto Raptors'],
@@ -14,3 +16,4 @@ area_list={'Atlantic':['Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Ph
            'Pacific':['Golden State Warriors', 'Los Angeles Clippers', 'Los Angeles Lakers', 'Phoenix Suns','Sacramento Kings'],
            'Southwest':['Dallas Mavericks', 'Houston Rockets', 'Memphis Grizzlies', 'New Orleans Pelicans','San Antonio Spurs']}
 option_area = st.sidebar.selectbox('選擇區域？',area_list)
+option_teams = st.sidebar.selectbox('選擇球隊？',area_list[option_area])
