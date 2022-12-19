@@ -35,7 +35,7 @@ teams_map.teams_map(option_teams)
 #-----球隊戰績-------------------------------------------------------------
 col1,col2=st.columns((6,4))
 with col1:
-  st.markdown('### 球隊戰績')
+  st.markdown('### 球隊年度戰績')
   teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option_teams,index_col='年度')
   st.dataframe(teams_data)
 with col2: 
