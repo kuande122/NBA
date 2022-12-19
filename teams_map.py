@@ -3,8 +3,8 @@ import folium
 from PIL import Image  
 from streamlit_folium import folium_static 
 
-def teams_map(option):
-  if option=="Boston Celtics":
+def teams_map(option_teams):
+  if option_teams=="Boston Celtics":
     st.markdown('### 主場: TD Garden')
     col1,col2 = st.columns((6,4))
     with col1: 
@@ -23,7 +23,7 @@ def teams_map(option):
         st.image(image1)
         
         
-  if option=="Brooklyn Nets":
+  if option_teams=="Brooklyn Nets":
     st.markdown('### 主場: Barclays Center')
     col1,col2 = st.columns((6,4))
     with col1: 
@@ -42,7 +42,7 @@ def teams_map(option):
         st.image(image1)
     
     
-  if option=="New York Knicks":
+  if option_teams=="New York Knicks":
     st.markdown('### 主場: MSG The Garden')
     col1,col2 = st.columns((6,4))
     with col1: 
@@ -61,7 +61,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Philadelphia 76ers":
+  if option_teams=="Philadelphia 76ers":
     st.markdown('### 主場: Wells Fargo Center')
     col1,col2 = st.columns((6,4))
     with col1:   
@@ -81,7 +81,7 @@ def teams_map(option):
         
         
         
-  if option=="Toronto Raptors":
+  if option_teams=="Toronto Raptors":
     st.markdown('### 主場: Scotiabank Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
@@ -100,7 +100,7 @@ def teams_map(option):
         st.image(image1)
         
         
-  if option=="Chicago Bulls":
+  if option_teams=="Chicago Bulls":
     st.markdown('### 主場: United Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -119,7 +119,7 @@ def teams_map(option):
         st.image(image1)   
         
         
-  if option=="Cleveland Cavaliers":
+  if option_teams=="Cleveland Cavaliers":
     st.markdown('### 主場: Quicken Loans Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
@@ -138,7 +138,7 @@ def teams_map(option):
         st.image(image1)
     
     
-  if option=="Detroit Pistons":
+  if option_teams=="Detroit Pistons":
     st.markdown('### 主場: Little Caesars Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
@@ -157,7 +157,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Indiana Pacers":
+  if option_teams=="Indiana Pacers":
     st.markdown('### 主場: Gainbridge Fieldhouse')
     col1,col2 = st.columns((6,4))
     with col1:  
@@ -176,7 +176,7 @@ def teams_map(option):
         image1 =Image.open('Home/GainbridgeFieldhouse1.jpg')
         st.image(image1)
    
-  if option=="Milwaukee Bucks":
+  if option_teams=="Milwaukee Bucks":
     st.markdown('### 主場: Fiserv Forum')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -196,7 +196,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Atlanta Hawks":
+  if option_teams=="Atlanta Hawks":
     st.markdown('### 主場: State Farm Arena')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -216,7 +216,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Charlotte Hornets":
+  if option_teams=="Charlotte Hornets":
     st.markdown('### 主場: Spectrum Center')
     col1,col2 = st.columns((6,4))
     with col1: 
@@ -236,7 +236,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Miami Heat":
+  if option_teams=="Miami Heat":
     st.markdown('### 主場: FTX Arena')
     col1,col2 = st.columns((6,4))
     with col1:  
@@ -254,7 +254,7 @@ def teams_map(option):
         st.image(image)
         image1 =Image.open('Home/FTX Arena1.jpg')
         st.image(image1)
-  if option=="Orlando Magic":
+  if option_teams=="Orlando Magic":
     st.markdown('### 主場: Amway Center')
     col1,col2 = st.columns((6,4))
     with col1:  
@@ -274,7 +274,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Washington Wizards":
+  if option_teams=="Washington Wizards":
     st.markdown('### 主場: Capital One Arena')
     col1,col2 = st.columns((6,4))
     with col1:        
@@ -292,7 +292,7 @@ def teams_map(option):
         image1 =Image.open('Home/Capital One Arena1.jpeg')
         st.image(image1)
    
-  if option=="Denver Nuggets":
+  if option_teams=="Denver Nuggets":
     st.markdown('### 主場: Ball Arena')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -311,7 +311,7 @@ def teams_map(option):
         st.image(image1)
    
   
-  if option=="Minnesota Timberwolves":
+  if option_teams=="Minnesota Timberwolves":
     st.markdown('### 主場: Target Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -329,7 +329,7 @@ def teams_map(option):
         image1 =Image.open('Home/Target Center1.jpeg')
         st.image(image1)
    
-  if option=="Oklahoma City Thunder":
+  if option_teams=="Oklahoma City Thunder":
     st.markdown('### 主場: Chesapeake Energy Arena')
     col1,col2 = st.columns((6,4))
     with col1: 
@@ -347,7 +347,7 @@ def teams_map(option):
         image1 =Image.open('Home/Chesapeake Energy Arena1.jpeg')
         st.image(image1)
     
-  if option=="Portland Trail Blazers":
+  if option_teams=="Portland Trail Blazers":
     st.markdown('### 主場: Moda Center')
     col1,col2 = st.columns((6,4))
     with col1:   
@@ -365,7 +365,7 @@ def teams_map(option):
         image1 =Image.open('Home/Moda Center1.jpeg')
         st.image(image1)
  
-  if option=="Utah Jazz":
+  if option_teams=="Utah Jazz":
     st.markdown('### 主場: Vivint Arena')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -383,7 +383,7 @@ def teams_map(option):
         st.image(image)
         image1 =Image.open('Home/Vivint Arena1.jpeg')
         st.image(image1)
-  if option=="Golden State Warriors":
+  if option_teams=="Golden State Warriors":
     st.markdown('### 主場: Chase Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -402,7 +402,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Los Angeles Clippers":
+  if option_teams=="Los Angeles Clippers":
     st.markdown('### 主場: Staples Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -421,7 +421,7 @@ def teams_map(option):
         image1 = Image.open('Home/Staples_Center_Tickets.jpg')
         st.image(image1)
    
-  if option=="Los Angeles Lakers":
+  if option_teams=="Los Angeles Lakers":
     st.markdown('### 主場: Staples Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -441,7 +441,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Phoenix Suns":
+  if option_teams=="Phoenix Suns":
     st.markdown('### 主場: Footprint Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -461,7 +461,7 @@ def teams_map(option):
         st.image(image1)
     
 
-  if option=="Sacramento Kings":
+  if option_teams=="Sacramento Kings":
     st.markdown('### 主場: Golden1 Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -480,7 +480,7 @@ def teams_map(option):
         image1 = Image.open('Home/Golden1_Center_Tickets.jpg')
         st.image(image1)
    
-  if option=="Dallas Mavericks":
+  if option_teams=="Dallas Mavericks":
     st.markdown('### 主場: American Airlines Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -500,7 +500,7 @@ def teams_map(option):
         st.image(image1)
     
   
-  if option=="Houston Rockets":
+  if option_teams=="Houston Rockets":
     st.markdown('### 主場:Toyota Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -519,7 +519,7 @@ def teams_map(option):
         image1 = Image.open('Home/Toyota_Center_Tickets.jpg')
         st.image(image1)
     
-  if option=="Memphis Grizzlies":
+  if option_teams=="Memphis Grizzlies":
     st.markdown('### 主場: FedExForum Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -539,7 +539,7 @@ def teams_map(option):
         st.image(image1)
     
     
-  if option=="New Orleans Pelicans":
+  if option_teams=="New Orleans Pelicans":
     st.markdown('### 主場: Smoothie King Center')
     col1,col2 = st.columns((6,4))
     with col1:
@@ -558,7 +558,7 @@ def teams_map(option):
         image1 = Image.open('Home/Smoothie_King_Center_Tickets.jpg')
         st.image(image1)
     
-  if option=="San Antonio Spurs":
+  if option_teams=="San Antonio Spurs":
     st.markdown('### 主場: ATT Center')
     col1,col2 = st.columns((6,4))
     with col1:
