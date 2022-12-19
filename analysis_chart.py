@@ -51,7 +51,6 @@ def analysis_chart(option_teams):
         if option_data=='進攻籃板': #長條圖
            plt.bar(teams_data.年度,teams_data.進攻籃板)
            plt.bar(league_data.年度,league_data.進攻籃板)
-           #teams_data.plot.bar(x='年度',y='進攻籃板')
-           #league_data.plot.bar(x='年度',y='進攻籃板')
+           plt.xlabel('Season',fontsize="10")
            st.pyplot(plt)
            
