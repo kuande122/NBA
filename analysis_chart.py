@@ -8,7 +8,7 @@ def analysis_chart(option_teams):
                "總籃板":{"TRB"},"助攻":{"AST"},"抄截":{"STL"},"火鍋":{"BLK"},"失誤":{"TOV"},"犯規":{"PF"},"得分":{"PTS"}}
     teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option_teams) 
     league_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name="League Average") 
-    col1,col2=st.columns((6,4))
+    col1,col2=st.columns((4,6))
     with col1:
         option_data = st.selectbox('想查看數據？',data_list)
     with col2:
