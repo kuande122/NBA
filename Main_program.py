@@ -34,10 +34,10 @@ teams_map.teams_map(option_teams)
 col1,col2=st.columns((6,4))
 with col1:
   st.markdown('### 球隊戰績')
-  teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option)
+  teams_data=pd.read_excel("data/nbateamsdata.xlsx",sheet_name=option_teams)
   st.dataframe(teams_data)
 with col2: 
-  dount_chart_df = pd.read_excel("data/nbateamsdata(dount_chart).xlsx",sheet_name=option)
+  dount_chart_df = pd.read_excel("data/nbateamsdata(dount_chart).xlsx",sheet_name=option_teams)
   st.markdown('### 年度戰績Donut chart')
   donut_theta = st.selectbox('選擇年度', ('14-15年','15-16年','16-17年','17-18年','18-19年','19-20年','20-21年','21-22年'))
   plost.donut_chart(
