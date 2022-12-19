@@ -54,3 +54,17 @@ st.markdown('### 2021-22球員戰績')
 players_data=pd.read_excel("data/21-22playersdata.xlsx",sheet_name=option_teams)
 st.dataframe(players_data)
 
+
+#-----三大傳奇球星成績--------------------------------------------------
+st.markdown('### 三大傳奇球星成績')
+col1,col2=st.columns(2)
+with col1:
+   option_legendplayer = st.selectbox('選擇球員？',legend_list[option_teams])
+   legendplayer_data = pd.read_excel("teams_legendplayerdata.xlsx",index_col='球員')      
+   legendplayer_data=legendplayer_data.loc[option_legendplayer]
+   legendplayer_data=legendplayer_data.reset_index(drop=False)
+   st.dataframe(legendplayer_data.T)
+with col2:
+   image = Image.open('legendplayer'+'/'+option_legendplayer+'.jpg')
+   st.image(image)  
+
