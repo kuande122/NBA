@@ -49,3 +49,4 @@ def analysis_chart(option_teams):
             st.pyplot(plt)
         
         if option_data=='進攻籃板': #長條圖
+            st.write
