@@ -34,6 +34,12 @@ teams_information.teams_information(option_teams)
 teams_map.teams_map(option_teams)
 
 
+#-----statement_court------------------------------------------------------
+st.markdown('### 主場地板視覺')
+image = Image.open('statement_court'+'/'+option_teams+'.png')
+st.image(image)  
+  
+  
 #-----球隊戰績-------------------------------------------------------------
 col1,col2=st.columns((6,4))
 with col1:
