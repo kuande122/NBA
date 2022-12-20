@@ -16,6 +16,8 @@ st.title('NBA資訊面板系統')
 
 
 #-----Sidebar----------------------------------------------------
+image=Image.open('NBA logo.png')
+st.sidebar.image(image)
 st.sidebar.title('請選擇區域及球隊')
 area_list={'Atlantic':{'Boston Celtics', 'Brooklyn Nets', 'New York Knicks', 'Philadelphia 76ers','Toronto Raptors'},
            'Central':{'Chicago Bulls', 'Cleveland Cavaliers', 'Detroit Pistons', 'Indiana Pacers','Milwaukee Bucks'},
