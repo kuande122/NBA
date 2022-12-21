@@ -98,7 +98,7 @@ st.markdown('### TOP 10 RANK👑')
 rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
 rank_data = rank_data[0:10]
 plt.bar(rank_data.PLAYER,rank_data.Games)
-st.pypolt(plt)
+st.pyplot(plt)
 
 
 
