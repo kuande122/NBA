@@ -131,9 +131,9 @@ col5,col6,col7=st.columns(3)
 with col5:
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='U,V')
   rank_data = rank_data[0:9]
-  rank_data.sort_values(by='3-PtFieldGoals',inplace=True,ascending=False)
+  rank_data.sort_values(by='PtFieldGoals',inplace=True,ascending=False)
   fig, ax = plt.subplots()
-  ax = sns.barplot(x=rank_data.3-PtFieldGoals, y=rank_data.PLAYER3)
+  ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
   ax.set_title(option_teams+' TOP 10 Rank to 3-PtFieldGoals')
   ax.set( ylabel='PLAYER')
   st.pyplot(fig)
