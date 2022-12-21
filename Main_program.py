@@ -104,6 +104,7 @@ with col1:
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
   ax.set_title(option_teams+' TOP 10 Rank to Games')
+  ax.set( ylabel='PLAYER')
   st.pyplot(fig)
 
 with col2:
