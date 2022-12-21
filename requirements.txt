@@ -4,5 +4,6 @@ pandas
 plost
 plotly
 altair
+vega_datasets
 matplotlib
 streamlit-folium
