@@ -96,8 +96,11 @@ with col2:
 #-----TOP 10 RANK👑-------------------------------------------------------------
 st.markdown('### TOP 10 RANK👑')
 rank_data = pd.DataFrame("data/TOP 10 Rank.xlsx",sheet_name=option_teams)
-
-
+plt.bar(TOP 10 Rank.PLAYER,teams_data.Games)
+plt.xlabel('Season',fontsize="10")
+plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
+plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
+st.pyplot(plt)
 
 
 
