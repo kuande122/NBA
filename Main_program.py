@@ -7,7 +7,7 @@ from PIL import Image   #圖片套件
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
 import teams_information
 import teams_map
-#import analysis_chart
+import analysis_chart
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="NBA Dashboard",
@@ -60,7 +60,7 @@ with col2:
   
 #-----analysis_chart---------------------------------------------------
 st.markdown('### 球隊數據分析')
-#analysis_chart.analysis_chart(option_teams)
+analysis_chart.analysis_chart(option_teams)
 
 
 #-----2021-22球員戰績---------------------------------------------------
