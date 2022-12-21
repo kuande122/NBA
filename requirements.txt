@@ -3,6 +3,5 @@ openpyxl
 pandas
 plost
 plotly
-
 matplotlib
 streamlit-folium
