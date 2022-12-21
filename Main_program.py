@@ -95,7 +95,7 @@ with col2:
 
 #-----TOP 10 RANK👑-------------------------------------------------------------
 st.markdown('### TOP 10 RANK👑')
-rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
+rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,index=False)
 plt.bar(rank_data.PLAYER,rank_data.Games)
 plt.xlabel('Season',fontsize="10")
 plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
