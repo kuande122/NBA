@@ -99,8 +99,8 @@ rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C'
 rank_data = rank_data[0:10]
 plt.bar(rank_data.PLAYER,rank_data.Games)
 plt.xlabel('Season',fontsize="10")
-plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
-plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
+#plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
+#plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
 st.pyplot(plt)
 
 
