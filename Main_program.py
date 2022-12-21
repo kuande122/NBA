@@ -98,6 +98,7 @@ with col2:
 st.markdown('### TOP 10 RANK👑')
 rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
 rank_data = rank_data[0:10]
+fig, ax = plt.subplots()
 ax = sns.barplot(x=rank_data.PLAYER, y=rank_data.Games)
 ax.set_title('Final Term')
 st.pyplot(fig)
