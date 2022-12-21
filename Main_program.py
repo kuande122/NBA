@@ -108,6 +108,7 @@ with col1:
 
 with col2:
   rank_data1 = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='F,G')
+  st.dataframe(rank_data1)
   rank_data1 = rank_data1[0:10]
   rank_data1.sort_values(by='MinutesPlayed',inplace=True,ascending=False)
   fig, ax = plt.subplots()
