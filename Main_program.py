@@ -98,8 +98,8 @@ with col2:
 st.markdown('### TOP 10 RANK👑')
 col1,col2=st.columns(3)
 with col1:
-rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
-rank_data = rank_data[0:10]
+rank_data1 = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
+rank_data1 = rank_data1[0:10]
 rank_data.sort_values(by='Games',inplace=True,ascending=False)
 fig, ax = plt.subplots()
 ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
@@ -107,8 +107,8 @@ ax.set_title(option_teams+' TOP 10 Rank to Games')
 st.pyplot(fig)
 
 with col2:
-rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='F,G')
-rank_data = rank_data[0:10]
+rank_data2 = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='F,G')
+rank_data2 = rank_data2[0:10]
 rank_data.sort_values(by='Minutes Played',inplace=True,ascending=False)
 fig, ax = plt.subplots()
 ax = sns.barplot(x=rank_data.Games, y=rank_data.Minutes Played)
