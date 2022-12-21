@@ -100,7 +100,7 @@ rank_data = rank_data[0:10]
 plt.bar(rank_data.PLAYER,rank_data.Games)
 #plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
 #plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
-st.pyplot(plt)
+plt
 
 
 
