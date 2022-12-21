@@ -98,8 +98,8 @@ with col2:
 st.markdown('### TOP 10 RANK👑')
 rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
 rank_data = rank_data[0:10]
-alt.Chart(rank_data).mark_bar().encode(x=rank_data.PLAYER,y=rank_data.Games)
-
+Games=alt.Chart(rank_data).mark_bar().encode(x=rank_data.PLAYER,y=rank_data.Games)
+st.altair_chart(Games, use_container_width=True)
 
 
 
