@@ -15,9 +15,8 @@ def analysis_chart(option_teams):
 #-----折線圖---------------------------------------------------------------
         if option_data=='三分球命中率':
             plt.style.use("ggplot")
-            width = 0.3
             plt.plot(teams_data.年度,teams_data.三分球命中率 ,'.-' ) 
-            plt.plot(league_data.年度+width,league_data.三分球命中率,'.-',width )
+            plt.plot(league_data.年度,league_data.三分球命中率,'.-' )
              
         if option_data=='兩分球命中率':
             plt.style.use("ggplot")
@@ -35,8 +34,9 @@ def analysis_chart(option_teams):
             plt.plot(league_data.年度,league_data.投籃命中率,'.-' )
 #-----長條圖---------------------------------------------------------------            
         if option_data=='進攻籃板':
+            width = 0.3
            plt.bar(teams_data.年度,teams_data.進攻籃板)
-           plt.bar(league_data.年度,league_data.進攻籃板)
+           plt.bar(league_data+width.年度,league_data.進攻籃板, width = 0.3)
             
         if option_data=='防守籃板': 
            plt.bar(teams_data.年度,teams_data.防守籃板)
