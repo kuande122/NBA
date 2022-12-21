@@ -99,7 +99,7 @@ st.markdown('### TOP 10 RANK👑')
 col1,col2,col3=st.columns(3)
 with col1:
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
-  rank_data = rank_data[0:10]
+  rank_data = rank_data[0:9]
   rank_data.sort_values(by='Games',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
@@ -108,8 +108,7 @@ with col1:
 
 with col2:
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='F,G')
-  st.dataframe(rank_data)
-  rank_data = rank_data[0:10]
+  rank_data = rank_data[0:9]
   rank_data.sort_values(by='MinutesPlayed',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.MinutesPlayed, y=rank_data.PLAYER1)
