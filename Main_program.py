@@ -96,7 +96,7 @@ with col2:
 
 #-----TOP 10 RANK👑-------------------------------------------------------------
 st.markdown('### TOP 10 RANK👑')
-col1,col2=st.columns(3)
+col1,col2,col3=st.columns(3)
 with col1:
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
   rank_data = rank_data[0:10]
