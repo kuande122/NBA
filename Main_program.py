@@ -111,7 +111,7 @@ with col2:
   rank_data1 = rank_data1[0:9]
   rank_data1.sort_values(by='MinutesPlayed',inplace=True,ascending=False)
   fig, ax = plt.subplots()
-  ax = sns.barplot(x=rank_data1.MinutesPlayed, y=rank_data1.PLAYER)
+  ax = sns.barplot(x=rank_data1.MinutesPlayed, y=rank_data1.PLAYER1)
   ax.set_title(option_teams+' TOP 10 Rank to Minutes Played')
   st.pyplot(fig)
  
