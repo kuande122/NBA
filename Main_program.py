@@ -7,7 +7,7 @@ from PIL import Image   #圖片套件
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
 import teams_information
 import teams_map
-import analysis_chart
+#import analysis_chart
 
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="NBA Dashboard",
