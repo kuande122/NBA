@@ -104,7 +104,7 @@ with col1:
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
   ax.set_title(option_teams+' TOP 10 Rank to Games')
-  ax.set( ylabel='PLAYER')
+  ax.set(xlabel="Games" , ylabel='PLAYER')
   st.pyplot(fig)
 
 with col2:
@@ -114,7 +114,7 @@ with col2:
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.MinutesPlayed, y=rank_data.PLAYER1)
   ax.set_title(option_teams+' TOP 10 Rank to Minutes Played')
-  ax.set( ylabel='PLAYER')
+  ax.set(xlabel="Minutes Played" ,ylabel='PLAYER')
   st.pyplot(fig)
  
 with col3:
@@ -123,8 +123,8 @@ with col3:
   rank_data.sort_values(by='FieldGoals',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.FieldGoals, y=rank_data.PLAYER2)
-  ax.set_title(option_teams+' TOP 10 Rank to FieldGoals')
-  ax.set( ylabel='PLAYER')
+  ax.set_title(option_teams+' TOP 10 Rank to Field Goals')
+  ax.set( xlabel="Field Goals",ylabel='PLAYER')
   st.pyplot(fig)
 
 col5,col6,col7=st.columns(3)
