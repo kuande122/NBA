@@ -121,7 +121,7 @@ with col3:
   rank_data = rank_data[0:9]
   rank_data.sort_values(by='FieldGoals',inplace=True,ascending=False)
   fig, ax = plt.subplots()
-  ax = sns.barplot(x=rank_data.FieldGoals, y=rank_data.PLAYER+".2")
+  ax = sns.barplot(x=rank_data.FieldGoals, y=rank_data.PLAYER2)
   ax.set_title(option_teams+' TOP 10 Rank to FieldGoals')
   ax.set( ylabel='PLAYER')
   st.pyplot(fig)
