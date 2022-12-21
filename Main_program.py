@@ -119,7 +119,7 @@ with col2:
 with col3:
   rank_data3 = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='K,L')
   rank_data3 = rank_data[0:9]
-  rank_data.sort_values(by='FieldGoals',inplace=True,ascending=False)
+  rank_data3.sort_values(by='FieldGoals',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data3.FieldGoals, y=rank_data3.PLAYER2)
   ax.set_title(option_teams+' TOP 10 Rank to FieldGoals')
