@@ -107,11 +107,11 @@ with col1:
   st.pyplot(fig)
 
 with col2:
-  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='F,G')
-  rank_data = rank_data[0:10]
+  rank_data1 = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='F,G')
+  rank_data1 = rank_data1[0:10]
   rank_data.sort_values(by='MinutesPlayed',inplace=True,ascending=False)
   fig, ax = plt.subplots()
-  ax = sns.barplot(x=rank_data.MinutesPlayed, y=rank_data.PLAYER)
+  ax = sns.barplot(x=rank_data1.MinutesPlayed, y=rank_data1.PLAYER)
   ax.set_title(option_teams+' TOP 10 Rank to Minutes Played')
   st.pyplot(fig)
 
