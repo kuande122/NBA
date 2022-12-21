@@ -17,7 +17,7 @@ def analysis_chart(option_teams):
             plt.style.use("ggplot")
             width = 0.3
             plt.plot(teams_data.年度,teams_data.三分球命中率 ,'.-' ) 
-            plt.plot(league_data.年度+width,league_data.三分球命中率,'.-' )
+            plt.plot(league_data.年度+width,league_data.三分球命中率,'.-',width )
              
         if option_data=='兩分球命中率':
             plt.style.use("ggplot")
