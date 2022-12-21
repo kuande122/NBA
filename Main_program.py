@@ -95,7 +95,7 @@ with col2:
 
 #-----TOP 10 RANK👑-------------------------------------------------------------
 st.markdown('### TOP 10 RANK👑')
-
+rank_data = pd.DataFrame("data/TOP 10 Rank.xlsx",sheet_name=option_teams)
 
 
 
