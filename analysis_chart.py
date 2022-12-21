@@ -36,7 +36,7 @@ def analysis_chart(option_teams):
         if option_data=='進攻籃板':
            width = 0.3
            plt.bar(teams_data.年度,teams_data.進攻籃板)
-           plt.bar(league_data.年度+width,league_data.進攻籃板, width)
+           plt.bar(league_data.年度 + width,league_data.進攻籃板, width)
             
         if option_data=='防守籃板': 
            plt.bar(teams_data.年度,teams_data.防守籃板)
