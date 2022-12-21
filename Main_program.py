@@ -6,6 +6,7 @@ import plost            #plost套件(甜甜圈圖)
 from PIL import Image   #圖片套件
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
 import altair as alt
+from vega_datasets import data
 import teams_information
 import teams_map
 import analysis_chart
