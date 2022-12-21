@@ -115,6 +115,6 @@ with col2:
   ax = sns.barplot(x=rank_data.MinutesPlayed, y=rank_data.PLAYER)
   ax.set_title(option_teams+' TOP 10 Rank to Minutes Played')
   st.pyplot(fig)
-
+ 
 
 
