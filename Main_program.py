@@ -135,5 +135,5 @@ with col5:
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
   ax.set_title(option_teams+' TOP 10 Rank to 3-PtFieldGoals')
-  ax.set( ylabel='PLAYER')
+  ax.set( xlabel="3-PtFieldGoals",ylabel='PLAYER')
   st.pyplot(fig)
