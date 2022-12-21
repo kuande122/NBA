@@ -101,8 +101,7 @@ rank_data = rank_data[0:10]
 rank_data.sort_values(by='Games',inplace=True,ascending=False)
 fig, ax = plt.subplots()
 ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER,color='blue')
-ax.set_title('Final Term')
-
+ax.set_title(option_teams+'TOP 10 Rank to Games')
 st.pyplot(fig)
 
 
