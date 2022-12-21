@@ -100,7 +100,7 @@ rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C'
 rank_data = rank_data[0:10]
 rank_data.sort_values(by='Games',inplace=True,ascending=False)
 fig, ax = plt.subplots()
-ax = sns.barplot(x=rank_data.PLAYER, y=rank_data.Games)
+ax = sns.barplot(x=rank_data.PLAYER, y=rank_data.Games,color='blue')
 ax.set_title('Final Term')
 
 st.pyplot(fig)
