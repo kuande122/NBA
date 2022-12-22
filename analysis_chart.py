@@ -3,6 +3,7 @@ import xlrd             #excel套件
 import openpyxl         #excel套件
 import pandas as pd     #pandas套件(資料分析)
 import matplotlib.pyplot as plt #matplotlib(資料繪圖)
+import seaborn as sns
 def analysis_chart(option_teams):
     data_list={"三分球命中率":"3P%","兩分球命中率":"2P%","罰球命中率":"FT%","投籃命中率":"FG%","進攻籃板":"ORB","防守籃板":"DRB",
                "總籃板數":"TRB","總助攻":"AST","總抄截":"STL","總火鍋":"BLK","總失誤":"TOV","犯規次數":"PF","總得分":"PTS"}
