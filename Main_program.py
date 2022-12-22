@@ -9,7 +9,7 @@ import seaborn as sns
 import teams_information
 import teams_map
 import analysis_chart
-
+import TOP10RANK
 #-----Set up-----------------------------------------------------
 st.set_page_config(page_title="NBA Dashboard",
                    page_icon='🏀',
@@ -137,3 +137,6 @@ with col5:
   ax.set_title(option_teams+' TOP 10 Rank to 3-PtFieldGoals')
   ax.set( xlabel="3-PtFieldGoals",ylabel='PLAYER')
   st.pyplot(fig)
+#------TOP 10 RANK👑-----------------------------------------------------------------
+TOP10RANK.TOP10RANK(option_teams)
+
