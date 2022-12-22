@@ -35,11 +35,8 @@ def analysis_chart(option_teams):
             plt.plot(league_data.年度,league_data.投籃命中率,'.-' )
 #-----長條圖---------------------------------------------------------------            
         if option_data=='進攻籃板':
-           x=teams_data.年度
-           x2=league_data.年度
-           width = 0.3
-           plt.bar(x,teams_data.進攻籃板,width)
-           plt.bar(x2+width,league_data.進攻籃板,width)
+           plt.bar(teams_data.年度,teams_data.進攻籃板)
+           plt.bar(league_data.年度,league_data.進攻籃板)
            
             
         if option_data=='防守籃板': 
