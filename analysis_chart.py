@@ -74,4 +74,7 @@ def analysis_chart(option_teams):
         plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
         plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
         st.pyplot(plt)
-           
+ 
+
+def TOP10RANK(option_teams):
+    
