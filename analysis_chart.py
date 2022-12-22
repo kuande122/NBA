@@ -74,17 +74,6 @@ def analysis_chart(option_teams):
         plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
         plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
         st.pyplot(plt)
- 
-
-def TOP10RANK(option_teams):
-    st.markdown('### TOP 10 RANK👑')
-    col1,col2,col3=st.columns(3)
-    with col1:
-      rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
-      rank_data = rank_data[0:9]
-      plt.bar(rank_data.Games,rank_data.PLAYER)
-      rank_data.sort_values(by='Games',inplace=True,ascending=False)
-      st.pyplot(plt)
 
 
 
