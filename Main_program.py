@@ -140,7 +140,7 @@ with col5:
   st.pyplot(fig)
 
 with col6:  
-  rank_data.sort_values(by='TotalRebounds,',inplace=True,ascending=False)
+  rank_data.sort_values(by='TotalRebounds',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.TotalRebounds, y=rank_data.PLAYER5)
   ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
