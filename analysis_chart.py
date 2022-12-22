@@ -104,7 +104,7 @@ def TOP10RANK(option_teams):
      ax.set_title(option_teams+' TOP 10 Rank to Field Goals')
      ax.set( xlabel="Field Goals",ylabel='PLAYER')
      st.pyplot(fig)
-    x=st.button('點取看更多')
+    
     if x:
         col4,col5,col6=st.columns(3)
         with col4:  
@@ -130,7 +130,8 @@ def TOP10RANK(option_teams):
           ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
           ax.set( xlabel="Total Rebounds",ylabel='PLAYER')
           st.pyplot(fig)
-        if x:
+         y=st.button('點取看更多')
+        if y:
             col7,col8,col9=st.columns(3)
             with col7:
               rank_data.sort_values(by='Assists',inplace=True,ascending=False)
