@@ -99,7 +99,7 @@ st.markdown('### TOP 10 RANK👑')
 col1,col2,col3=st.columns(3)
 rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
 with col1:
-  rank_data.sort_values(by='Games',inplace=True,ascending=False)
+  rank_data.sort_values(by=Games,inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
   ax.set_title(option_teams+' TOP 10 Rank to Games')
