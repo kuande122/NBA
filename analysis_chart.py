@@ -105,4 +105,29 @@ def TOP10RANK(option_teams):
      st.pyplot(fig)
     st.button('點取看更多')
     if st.button('點取看更多'):
+        col4,col5,col6=st.columns(3)
+        with col4:  
+          rank_data.sort_values(by='PtFieldGoals',inplace=True,ascending=False)
+          fig, ax = plt.subplots()
+          ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
+          ax.set_title(option_teams+' TOP 10 Rank to 3-Pt Field Goals')
+          ax.set( xlabel="3-Pt Field Goals",ylabel='PLAYER')
+          st.pyplot(fig)
+
+        with col5:
+          rank_data.sort_values(by='FreeThrows',inplace=True,ascending=False)
+          fig, ax = plt.subplots()
+          ax = sns.barplot(x=rank_data.FreeThrows, y=rank_data.PLAYER4)
+          ax.set_title(option_teams+' TOP 10 Rank to Free Throws')
+          ax.set( xlabel="Free Throws",ylabel='PLAYER')
+          st.pyplot(fig)
+
+        with col6:  
+          rank_data.sort_values(by='TotalRebounds',inplace=True,ascending=False)
+          fig, ax = plt.subplots()
+          ax = sns.barplot(x=rank_data.TotalRebounds, y=rank_data.PLAYER5)
+          ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
+          ax.set( xlabel="Total Rebounds",ylabel='PLAYER')
+          st.pyplot(fig)
+
 
