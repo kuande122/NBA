@@ -145,7 +145,7 @@ def TOP10RANK(option_teams):
            ax.set_title(option_teams+' TOP 10 Rank to Steals')
            ax.set( xlabel="Steals",ylabel='PLAYER')
            st.pyplot(fig)
-         with col9:
+        with col9:
             rank_data.sort_values(by='Blocks',inplace=True,ascending=False)
             fig, ax = plt.subplots()
             ax = sns.barplot(x=rank_data.Blocks, y=rank_data.PLAYER8)
