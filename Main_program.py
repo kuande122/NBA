@@ -155,3 +155,23 @@ with col7:
   ax.set_title(option_teams+' TOP 10 Rank to Assists')
   ax.set( xlabel="Assists",ylabel='PLAYER')
   st.pyplot(fig)
+  
+with col8:
+  rank_data.sort_values(by='Steals',inplace=True,ascending=False)
+  fig, ax = plt.subplots()
+  ax = sns.barplot(x=rank_data.Steals, y=rank_data.PLAYER7)
+  ax.set_title(option_teams+' TOP 10 Rank to Steals')
+  ax.set( xlabel="Steals",ylabel='PLAYER')
+  st.pyplot(fig)
+ 
+  
+with col9:
+  rank_data.sort_values(by='Blocks',inplace=True,ascending=False)
+  fig, ax = plt.subplots()
+  ax = sns.barplot(x=rank_data.Blocks, y=rank_data.PLAYER8)
+  ax.set_title(option_teams+' TOP 10 Rank to Blocks')
+  ax.set( xlabel="Blocks",ylabel='PLAYER')
+  st.pyplot(fig)
+  
+  
+  
