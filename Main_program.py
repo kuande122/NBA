@@ -149,6 +149,7 @@ with col5:
 with col6:  
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
   rank_data = rank_data[11:21]
+  st.dataframe(rank_data)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.TotalRebounds, y=rank_data.PLAYER5)
   ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
