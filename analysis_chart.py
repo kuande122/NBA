@@ -104,7 +104,7 @@ def TOP10RANK(option_teams):
      ax.set_title(option_teams+' TOP 10 Rank to Field Goals')
      ax.set( xlabel="Field Goals",ylabel='PLAYER')
      st.pyplot(fig)
-    
+    x=st.button('點取看更多')
     if x:
         col4,col5,col6=st.columns(3)
         with col4:  
