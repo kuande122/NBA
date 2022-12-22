@@ -127,16 +127,16 @@ with col4:
   rank_data.sort_values(by='PtFieldGoals',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
-  ax.set_title(option_teams+' TOP 10 Rank to 3-PtFieldGoals')
-  ax.set( xlabel="3-PtFieldGoals",ylabel='PLAYER')
+  ax.set_title(option_teams+' TOP 10 Rank to 3-Pt Field Goals')
+  ax.set( xlabel="3-Pt Field Goals",ylabel='PLAYER')
   st.pyplot(fig)
 
 with col5:
   rank_data.sort_values(by='FreeThrows',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.FreeThrows, y=rank_data.PLAYER4)
-  ax.set_title(option_teams+' TOP 10 Rank to FreeThrows')
-  ax.set( xlabel="FreeThrows",ylabel='PLAYER')
+  ax.set_title(option_teams+' TOP 10 Rank to Free Throws')
+  ax.set( xlabel="Free Throws",ylabel='PLAYER')
   st.pyplot(fig)
 
 with col6:  
