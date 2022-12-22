@@ -129,7 +129,7 @@ with col3:
 
 col5,col6,col7=st.columns(3)
 with col5:
-  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='U,V')
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='P,Q')
   rank_data = rank_data[0:9]
   st.dataframe(rank_data)
   fig, ax = plt.subplots()
