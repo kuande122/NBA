@@ -74,6 +74,35 @@ def analysis_chart(option_teams):
         plt.title(option_teams+" "+data_list[option_data]+" vs League Average")
         plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
         st.pyplot(plt)
+        
+#-----TOP10RANK-----------------------------------------------------------------------------------------------------
+def TOP10RANK(option_teams):
+    st.markdown('### TOP 10 RANK👑')
+    rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
+    col1,col2,col3=st.columns(3)
+    with col1:
+      rank_data.sort_values(by='Games',inplace=True,ascending=False)
+      fig, ax = plt.subplots()
+      ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
+      ax.set_title(option_teams+' TOP 10 Rank to Games')
+      ax.set(xlabel="Games" , ylabel='PLAYER')
+      st.pyplot(fig)
 
+    with col2:
+      rank_data.sort_values(by='MinutesPlayed',inplace=True,ascending=False)
+      fig, ax = plt.subplots()
+      ax = sns.barplot(x=rank_data.MinutesPlayed, y=rank_data.PLAYER1)
+      ax.set_title(option_teams+' TOP 10 Rank to Minutes Played')
+      ax.set(xlabel="Minutes Played" ,ylabel='PLAYER')
+      st.pyplot(fig)
 
+    with col3:
+     rank_data.sort_values(by='FieldGoals',inplace=True,ascending=False)
+     fig, ax = plt.subplots()
+     ax = sns.barplot(x=rank_data.FieldGoals, y=rank_data.PLAYER2)
+     ax.set_title(option_teams+' TOP 10 Rank to Field Goals')
+     ax.set( xlabel="Field Goals",ylabel='PLAYER')
+     st.pyplot(fig)
+    st.button('點取看更多')
+    if st.button('點取看更多'):
 
