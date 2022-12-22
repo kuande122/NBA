@@ -131,11 +131,18 @@ col5,col6,col7=st.columns(3)
 with col5:
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='P,Q')
   rank_data = rank_data[0:9]
-  st.dataframe(rank_data)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
   ax.set_title(option_teams+' TOP 10 Rank to 3-PtFieldGoals')
   ax.set( xlabel="3-PtFieldGoals",ylabel='PLAYER')
   st.pyplot(fig)
 
+with col6:
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='U,V')
+  rank_data = rank_data[0:9]
+  fig, ax = plt.subplots()
+  ax = sns.barplot(x=rank_data.FreeThrows, y=rank_data.PLAYER4)
+  ax.set_title(option_teams+' TOP 10 Rank to FreeThrows')
+  ax.set( xlabel="FreeThrows",ylabel='PLAYER')
+  st.pyplot(fig)
 
