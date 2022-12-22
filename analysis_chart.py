@@ -38,8 +38,8 @@ def analysis_chart(option_teams):
            x=teams_data.年度
            x2=league_data.年度
            width = 0.3
-           plt.bar(x,teams_data.年度,teams_data.進攻籃板,width)
-           plt.bar(x2+x,league_data.進攻籃板,width)
+           plt.bar(x,teams_data.進攻籃板,width)
+           plt.bar(x2+width,league_data.進攻籃板,width)
            
             
         if option_data=='防守籃板': 
