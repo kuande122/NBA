@@ -175,3 +175,5 @@ with col9:
   
   
   
+analysis_chart.TOP10RANK(option_teams)
+  
