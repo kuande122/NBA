@@ -76,7 +76,7 @@ def analysis_chart(option_teams):
         plt.legend(labels=[option_teams+" "+data_list[option_data],"League Average "+data_list[option_data]], loc = 'best')
         st.pyplot(plt)
         
-#-----TOP10RANK-----------------------------------------------------------------------------------------------------
+#-----TOP10RANK👑-----------------------------------------------------------------------------------------------------
 def TOP10RANK(option_teams):
     st.markdown('### TOP 10 RANK👑')
     rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
@@ -130,8 +130,7 @@ def TOP10RANK(option_teams):
           ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
           ax.set( xlabel="Total Rebounds",ylabel='PLAYER')
           st.pyplot(fig)
-        y=st.button('點取再看更多')
-        if y:
+        if x:
             col7,col8,col9=st.columns(3)
             with col7:
               rank_data.sort_values(by='Assists',inplace=True,ascending=False)
