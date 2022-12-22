@@ -127,8 +127,8 @@ with col3:
  ax.set( xlabel="Field Goals",ylabel='PLAYER')
  st.pyplot(fig)
 
-col5,col6,col7=st.columns(3)
-with col5:
+col4,col5,col6=st.columns(3)
+with col4:  
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='P,Q')
   rank_data = rank_data[0:9]
   fig, ax = plt.subplots()
@@ -137,7 +137,7 @@ with col5:
   ax.set( xlabel="3-PtFieldGoals",ylabel='PLAYER')
   st.pyplot(fig)
 
-with col6:
+with col5:
   rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='U,V')
   rank_data = rank_data[0:9]
   fig, ax = plt.subplots()
@@ -145,4 +145,12 @@ with col6:
   ax.set_title(option_teams+' TOP 10 Rank to FreeThrows')
   ax.set( xlabel="FreeThrows",ylabel='PLAYER')
   st.pyplot(fig)
-
+  
+with col6:  
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
+  rank_data = rank_data[11:21]
+  fig, ax = plt.subplots()
+  ax = sns.barplot(x=rank_data.TotalRebounds, y=rank_data.PLAYER5)
+  ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
+  ax.set( xlabel="Total Rebounds",ylabel='PLAYER')
+  st.pyplot(fig)
