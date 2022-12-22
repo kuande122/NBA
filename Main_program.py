@@ -147,7 +147,7 @@ with col5:
   st.pyplot(fig)
   
 with col6:  
-  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C',index_col=[11])
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams,usecols='B,C')
   rank_data = rank_data[11:21]
   st.dataframe(rank_data)
   fig, ax = plt.subplots()
