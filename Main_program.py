@@ -153,5 +153,5 @@ with col7:
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Assists, y=rank_data.PLAYER6)
   ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
-  ax.set( xlabel="Total Rebounds",ylabel='PLAYER')
+  ax.set( xlabel="Assists",ylabel='PLAYER')
   st.pyplot(fig)
