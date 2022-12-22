@@ -97,8 +97,9 @@ with col2:
 #-----TOP 10 RANK👑-------------------------------------------------------------
 st.markdown('### TOP 10 RANK👑')
 col1,col2,col3=st.columns(3)
-rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
+
 with col1:
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
   rank_data.sort_values(by='Games',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Games, y=rank_data.PLAYER)
@@ -107,6 +108,7 @@ with col1:
   st.pyplot(fig)
 
 with col2:
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
   rank_data.sort_values(by='MinutesPlayed',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.MinutesPlayed, y=rank_data.PLAYER1)
@@ -115,6 +117,7 @@ with col2:
   st.pyplot(fig)
  
 with col3:
+ rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
  rank_data.sort_values(by='FieldGoals',inplace=True,ascending=False)
  fig, ax = plt.subplots()
  ax = sns.barplot(x=rank_data.FieldGoals, y=rank_data.PLAYER2)
@@ -124,6 +127,7 @@ with col3:
 
 col4,col5,col6=st.columns(3)
 with col4:  
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
   rank_data.sort_values(by='PtFieldGoals,',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
@@ -132,6 +136,7 @@ with col4:
   st.pyplot(fig)
 
 with col5:
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
   rank_data.sort_values(by='FreeThrows,',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.FreeThrows, y=rank_data.PLAYER4)
@@ -140,6 +145,7 @@ with col5:
   st.pyplot(fig)
 
 with col6:  
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
   rank_data.sort_values(by='TotalRebounds,',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.TotalRebounds, y=rank_data.PLAYER5)
@@ -149,6 +155,7 @@ with col6:
 
 col7,col8,col9=st.columns(3)
 with col7:
+  rank_data = pd.read_excel("data/Rank.xlsx",sheet_name=option_teams)
   rank_data.sort_values(by='Assists,',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.Assists, y=rank_data.PLAYER6)
