@@ -130,7 +130,7 @@ def TOP10RANK(option_teams):
           ax.set_title(option_teams+' TOP 10 Rank to Total Rebounds')
           ax.set( xlabel="Total Rebounds",ylabel='PLAYER')
           st.pyplot(fig)
-        y=st.button('點取看更多')
+        y=st.button('點取再看更多')
         if y:
             col7,col8,col9=st.columns(3)
             with col7:
