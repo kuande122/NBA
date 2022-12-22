@@ -124,7 +124,7 @@ with col3:
 
 col4,col5,col6=st.columns(3)
 with col4:  
-  rank_data.sort_values(by='PtFieldGoals,',inplace=True,ascending=False)
+  rank_data.sort_values(by='PtFieldGoals',inplace=True,ascending=False)
   fig, ax = plt.subplots()
   ax = sns.barplot(x=rank_data.PtFieldGoals, y=rank_data.PLAYER3)
   ax.set_title(option_teams+' TOP 10 Rank to 3-PtFieldGoals')
