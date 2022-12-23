@@ -31,6 +31,22 @@ option_area = st.sidebar.selectbox('選擇區域？',area_list)
 option_teams = st.sidebar.selectbox('選擇球隊？',area_list[option_area])
 
 
+#-----teams_jersey--------------------------------------------------------
+col1,col2,col3=st.columns(3)
+with col1:
+  st.markdown('### 主場球衣')
+  image = Image.open('teams_jersey'+'/'+option_teams+' 1.jpg')
+  st.image(image)  
+with col2:
+  st.markdown('### 客場球衣')
+  image = Image.open('teams_jersey'+'/'+option_teams+' 2.jpg')
+  st.image(image)
+with col3:
+  st.markdown('### 城市版球衣')
+  image = Image.open('teams_jersey'+'/'+option_teams+' 3.jpg')
+  st.image(image)
+  
+  
 #-----teams_information&teams_map-----------------------------------------
 teams_information.teams_information(option_teams)
 teams_map.teams_map(option_teams)
